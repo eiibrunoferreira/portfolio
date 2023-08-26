@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: #1f1f1f;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px 0px 0px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+li {
+    cursor: pointer;
+}
+
+li a:hover {
+    transition-duration: 0.5s;
+    color: rgb(143, 20, 192);
+}
+
+.inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.titulos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    gap: 30px;
+}
+
+.titulo-estatico {
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.titulo-dinamico {
+    width: 14ch;
+    color: rgb(143, 20, 192);
+    font-size: 50px;
+    font-weight: 500;
+    border-right: 3px solid rgb(143, 20, 192);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitando 2s, piscando 0.5s infinite step-end alternate;
+}
+
+@keyframes digitando{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes piscando{
+    50%{
+        border-color: transparent;
+    }
+}
