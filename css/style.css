@@ -89,3 +89,38 @@ li a:hover {
         left: 100%;
     }
 }
+
+.photo-container img {
+    width: 700px;
+    height: 700px;
+    transform: translateY(0px);
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.divisao {
+    position: absolute;
+    border-top: 2px solid #0e0e0e;
+    width: 100vw;
+    height: 40px;
+    background-color: #181818;
+    left: 0;
+    bottom: 0px;
+}
+
+.sobre {
+    width: 100vw;
+    height: 900px;
+    background-color: #181818;
+}
