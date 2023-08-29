@@ -60,18 +60,13 @@ li a:hover {
 
 .titulo-dinamico {
     display: flex;
-    flex-direction: column;
-    line-height: 80px;
-    height: 90px;
     overflow: hidden;
+    padding-right: 2px;
 }
 
 .titulo-dinamico p {
     color: rgb(143, 20, 192);
     font-size: 50px;
-    font-weight: 500;
-    list-style: none;
-    width: 100%;
 }
 
 .titulo-dinamico p span {
@@ -85,7 +80,7 @@ li a:hover {
     height: 100%;
     left: 0;
     border-left: 2px solid rgb(143, 20, 192);
-    animation: escrevendo 8s infinite;
+    animation: escrevendo 6s infinite;
     background-color: #1f1f1f;
 }
 
