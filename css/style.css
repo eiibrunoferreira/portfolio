@@ -3,53 +3,50 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: #181818;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+body{
+    background-color: #1f1f1f;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
-body{
-    background-color: #1f1f1f;
-}
-
-header {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0px 0px 0px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-li {
-    cursor: pointer;
-}
-
-li a:hover {
-    transition-duration: 0.5s;
-    color: rgb(143, 20, 192);
-}
-
 .inicial {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 200px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding: 100px 200px 0px 200px;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .titulos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: start;
     font-family: 'Poppins', sans-serif;
-    gap: 30px;
 }
 
 .titulo-estatico {
@@ -61,7 +58,7 @@ li a:hover {
 .titulo-dinamico {
     display: flex;
     overflow: hidden;
-    padding-right: 2px;
+    padding-right: 20px;
 }
 
 .titulo-dinamico p {
@@ -86,15 +83,48 @@ li a:hover {
 
 @keyframes escrevendo {
     50% {
-        left: 100%;
+        left: 103%;
     }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+li {
+    cursor: pointer;
+}
+
+li a {
+    position: relative;
+}
+
+li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: rgb(143, 20, 192);
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+}
+
+li a:hover::after {
+    transform: scaleX(1);
 }
 
 .photo-container img {
     width: 700px;
     height: 700px;
     transform: translateY(0px);
-    animation: flutuar 5s ease-in-out infinite;
+    animation: flutuar 4s ease-in-out infinite;
 }
 
 @keyframes flutuar {
@@ -109,18 +139,37 @@ li a:hover {
     }
 }
 
-.divisao {
-    position: absolute;
-    border-top: 2px solid #0e0e0e;
+section {
+    overflow: hidden;
+    min-height: 100vh;
     width: 100vw;
-    height: 40px;
-    background-color: #181818;
-    left: 0;
-    bottom: 0px;
 }
 
 .sobre {
-    width: 100vw;
-    height: 900px;
     background-color: #181818;
+}
+
+.conhecimentos {
+    background-color: aqua;
+}
+
+.projetos {
+    background-color: red;
+}
+
+.contato {
+    background-color: blue;
+}
+
+/*MEDIAQUERIES*/
+
+@media(max-width: 1700px) {
+
+    .inicial {
+        flex-direction: column;
+    }
+
+    ul {
+        padding-bottom: 50px;
+    }
 }
