@@ -18,7 +18,7 @@ html {
 }
 
 body{
-    background-color: #1f1f1f;
+    background-color: #191919;
     overflow-x: hidden;
 }
 
@@ -30,12 +30,11 @@ a {
 .inicial {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 100px;
-    padding: 100px 200px 0px 200px;
+    justify-content: center;
+    
 }
 
-.container-left {
+.container-left-main {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -78,7 +77,7 @@ a {
     left: 0;
     border-left: 2px solid rgb(143, 20, 192);
     animation: escrevendo 6s infinite;
-    background-color: #1f1f1f;
+    background-color: #191919;
 }
 
 @keyframes escrevendo {
@@ -123,6 +122,7 @@ li a:hover::after {
 .photo-container img {
     width: 700px;
     height: 700px;
+    margin-left: 250px;
     transform: translateY(0px);
     animation: flutuar 4s ease-in-out infinite;
 }
@@ -146,7 +146,86 @@ section {
 }
 
 .sobre {
-    background-color: #181818;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container-right-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-text {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+.container-text.active {
+    height: auto;
+}
+
+.container-text.active ::before {
+    visibility: hidden;
+}
+
+.container-text p span {
+    position: relative;
+}
+
+.container-text p span::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(143, 20, 192);
+}
+
+.text-sobre {
+    overflow: hidden;
+    max-width: 600px;
+    font-size: 20px;
+    position: relative;
+}
+
+.text-sobre::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #202020);
+}
+
+.btn-ler-mais {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-ler-mais:hover {
+    transition-duration: 0.5s;
+    color: rgb(143, 20, 192);
+}
+
+.photo-container-sobre img {
+    width: 450px;
+    border: 1px solid transparent;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 10px 10px 10px rgb(5, 5, 5, 0.389);
 }
 
 .conhecimentos {
@@ -167,6 +246,11 @@ section {
 
     .inicial {
         flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .photo-container img {
+        margin-left: 0;
     }
 
     ul {
