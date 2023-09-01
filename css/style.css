@@ -20,6 +20,7 @@ html {
 body{
     background-color: #191919;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -143,14 +144,33 @@ section {
     overflow: hidden;
     min-height: 100vh;
     width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
+
+
+/*SOBRE*/
 
 .sobre {
     background-color: #202020;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
+}
+
+.photo-container-sobre {
+    position: relative;
+}
+
+.photo-container-sobre img {
+    width: 450px;
+    border-radius: 50%;
+    border-left: 5px solid rgb(143, 20, 192);
+    box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .container-right-sobre {
@@ -187,7 +207,7 @@ section {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(143, 20, 192);
+    background-color: #8f14c0;
 }
 
 .text-sobre {
@@ -217,20 +237,120 @@ section {
 
 .btn-ler-mais:hover {
     transition-duration: 0.5s;
-    color: rgb(143, 20, 192);
+    color: #8f14c0;
 }
 
-.photo-container-sobre img {
-    width: 450px;
-    border: 1px solid transparent;
-    border-top-left-radius: 150px;
-    border-bottom-right-radius: 150px;
-    box-shadow: 10px 10px 10px rgb(5, 5, 5, 0.389);
-}
+/*CONHECIMENTOS*/
 
 .conhecimentos {
-    background-color: aqua;
+    background-color: #191919;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
 }
+
+.conhecimentos h1 {
+    position: relative;
+    font-size: 50px;
+    background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conhecimentos h1::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.conhecimentos h1::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.containers-conhecimentos-geral {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.separador-conhecimentos {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.containers-conhecimentos {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.containers-conhecimentos i {
+    cursor: pointer;
+    font-size: 80px;
+}
+
+.container-conhecimento {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition-duration: 0.5s;
+}
+
+.container-conhecimento ::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+}
+
+.container-conhecimento:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.container-conhecimento p {
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/*PROJETOS*/
 
 .projetos {
     background-color: red;
