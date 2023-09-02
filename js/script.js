@@ -1,3 +1,15 @@
+
+//EFEITO ROLAGEM
+window.addEventListener("scroll", rolagemefeito);
+
+function rolagemefeito() {
+    let nav = document.querySelector('.menu-nav');
+    nav.classList.toggle('flex', window.scrollY > 950);
+}
+
+
+
+//EFEITO LER MAIS
 var button = document.getElementById('btn-ler-mais');
 
 button.addEventListener('click', function() {
@@ -10,3 +22,27 @@ button.addEventListener('click', function() {
 
     button.textContent ="Ler mais...";
 });
+
+
+
+//EFEITO BTN APARECER
+
+const btnVoltarTopo = document.querySelector(".btn-voltar-topo");
+
+window.addEventListener("scroll", ocultarbtn)
+
+function ocultarbtn() {
+    if(window.scrollY > 950) {
+        btnVoltarTopo.style.display = "flex"
+    } else {
+        btnVoltarTopo.style.display = "none"
+    }
+}
+ocultarbtn()
+
+
+
+//EFEITO PARA VOLTAR LA PRA CIMA
+btnVoltarTopo.addEventListener("click", function() {
+    window.scrollTo(0,0)
+})

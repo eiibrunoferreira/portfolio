@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -28,11 +29,55 @@ a {
     color: white;
 }
 
+header{
+    background-color: #191919;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: fixed;
+    width: 100vw;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+    z-index: 1;
+    animation: aparecer ease 0.5s;
+}
+
+.flex {
+    display: flex; 
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.btn-voltar-topo {
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    color: white;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    animation: aparecer ease 1s;
+}
+
+.btn-voltar-topo:hover {
+    transition-duration: 0.3s;
+    color: #d4d4d4;
+}
+
 .inicial {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .container-left-main {
@@ -141,12 +186,9 @@ li a:hover::after {
 }
 
 section {
-    overflow: hidden;
     min-height: 100vh;
     width: 100vw;
-    scroll-snap-align: start;
     display: flex;
-    position: sticky;
     top: 0;
     left: 0;
 }
@@ -353,11 +395,11 @@ section {
 /*PROJETOS*/
 
 .projetos {
-    background-color: red;
+    background-color: rgb(14, 13, 13);
 }
 
 .contato {
-    background-color: blue;
+    background-color: rgb(14, 13, 13);
 }
 
 /*MEDIAQUERIES*/
