@@ -16,14 +16,15 @@ button.addEventListener('click', function() {
     var containertext = document.querySelector ('.container-text');
     containertext.classList.toggle('active');
 
+    var separadorTextSobreBottom = document.querySelector(".text-sobre");
+    separadorTextSobreBottom.classList.toggle('activeSparator');
+
     if (containertext.classList.contains('active')) {
-        return button.textContent = "Ler menos";
+        return button.textContent = "Ler menos ▲";
     }
 
-    button.textContent ="Ler mais...";
+    button.textContent ="Ler mais... ▼";
 });
-
-
 
 //EFEITO BTN APARECER
 
