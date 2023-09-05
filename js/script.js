@@ -1,5 +1,4 @@
-
-//EFEITO ROLAGEM
+//EFEITO ROLAGEM MENU DE NAVEGAÇÃO
 window.addEventListener("scroll", rolagemefeito);
 
 function rolagemefeito() {
@@ -8,8 +7,7 @@ function rolagemefeito() {
 }
 
 
-
-//EFEITO LER MAIS
+//EFEITO BOTÃO LER MAIS E LER MENOS EM RELAÇÃO AO EFEITO DE DEGRADẼ
 var button = document.getElementById('btn-ler-mais');
 
 button.addEventListener('click', function() {
@@ -26,8 +24,8 @@ button.addEventListener('click', function() {
     button.textContent ="Ler mais... ▼";
 });
 
-//EFEITO BTN APARECER
 
+//EFEITO BOTÃO DE VOLTAR AO TOPO
 const btnVoltarTopo = document.querySelector(".btn-voltar-topo");
 
 window.addEventListener("scroll", ocultarbtn)
@@ -42,8 +40,7 @@ function ocultarbtn() {
 ocultarbtn()
 
 
-
-//EFEITO PARA VOLTAR LA PRA CIMA
+//FUNÇÃO DO BOTÃO PARA VOLTAR AO TOPO
 btnVoltarTopo.addEventListener("click", function() {
     window.scrollTo(0,0)
 })
