@@ -92,6 +92,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 80px;
 }
 
 /*LADO DOS DOS TÍTULOS E PÁGINAS*/
@@ -183,11 +184,14 @@ li a:hover::after {
     transform: scaleX(1);
 }
 
+.photo-container {
+    display: flex;
+}
+
 /*FOTO DA TELA DE INICIO*/
 .photo-container img {
     width: 700px;
     height: 700px;
-    margin-left: 250px;
     transform: translateY(0px);
     animation: flutuar 4s ease-in-out infinite;
 }
@@ -356,13 +360,13 @@ li a:hover::after {
 }
 
 /*TRAÇADO INFERIOR DO TÍTULO CONHECIMENTO*/
-.conhecimentos h1::before {
+.conhecimentos h1::after {
     content: "";
     position: absolute;
     width: 50%;
     height: 2px;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: #ffffff;
 }
 
@@ -400,11 +404,11 @@ li a:hover::after {
     align-items: center;
     gap: 15px;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 /*ICONES DOS CONHECIMENTOS*/
 .containers-conhecimentos i {
-    cursor: pointer;
     font-size: 80px;
 }
 
@@ -453,12 +457,12 @@ li a:hover::after {
 
 /*PRIMEIRA SEÇÃO*/ 
     .inicial {
-        flex-direction: column;
         padding-top: 100px;
     }
 
     .photo-container img {
-        margin-left: 0;
+        width: 500px;
+        height: 500px;
     }
 
     ul {
