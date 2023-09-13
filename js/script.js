@@ -3,7 +3,7 @@ window.addEventListener("scroll", rolagemefeito);
 
 function rolagemefeito() {
     let nav = document.querySelector('.menu-nav');
-    nav.classList.toggle('flex', window.scrollY > 950);
+    nav.classList.toggle('flex', window.scrollY > 600);
 }
 
 
@@ -31,7 +31,7 @@ const btnVoltarTopo = document.querySelector(".btn-voltar-topo");
 window.addEventListener("scroll", ocultarbtn)
 
 function ocultarbtn() {
-    if(window.scrollY > 950) {
+    if(window.scrollY > 5) {
         btnVoltarTopo.style.display = "flex"
     } else {
         btnVoltarTopo.style.display = "none"

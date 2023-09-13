@@ -456,16 +456,17 @@ li a:hover::after {
 @media(max-width: 1700px) {
 
 /*PRIMEIRA SEÇÃO*/ 
-    .inicial {
-        padding-top: 100px;
-    }
-
     .photo-container img {
         width: 500px;
         height: 500px;
     }
+}
 
-    ul {
-        padding-bottom: 50px;
+@media(max-width: 1300px) {
+    .photo-container img {
+        display: none;
+    }
+    .inicial {
+        flex-direction: column;
     }
 }
