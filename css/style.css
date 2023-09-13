@@ -217,6 +217,7 @@ li a:hover::after {
     align-items: center;
     justify-content: center;
     gap: 100px;
+    padding: 15px;
 }
 
 /*DIV DA FOTO DA TELA DE SOBRE*/
@@ -460,13 +461,43 @@ li a:hover::after {
         width: 500px;
         height: 500px;
     }
+
+/*SEGUNDA SEÇÃO*/
+    .photo-container-sobre img {
+        width: 380px;
+    }
+
+    .container-text span {
+        font-size: 40px;
+    }
+
+    .text-sobre {
+        font-size: 18px;
+    }
 }
 
+
+
+
 @media(max-width: 1300px) {
+
+/*PRIMEIRA SEÇÃO*/
     .photo-container img {
         display: none;
     }
     .inicial {
         flex-direction: column;
     }
+
+/*SEGUNDA SEÇÃO*/
+    .sobre {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo-container-sobre img {
+        margin-top: 25px;
+        width: 300px;
+    }
+
 }
