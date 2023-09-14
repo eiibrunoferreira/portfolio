@@ -492,12 +492,61 @@ li a:hover::after {
 /*SEGUNDA SEÇÃO*/
     .sobre {
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
+        padding: 55px 0px;
     }
 
     .photo-container-sobre img {
-        margin-top: 25px;
         width: 300px;
     }
 
+}
+
+
+
+
+@media(max-width: 1100px) {
+
+    .conhecimentos {
+        gap: 100px;
+    }
+
+    .conhecimentos h1 {
+        font-size: 40px;
+    }
+
+    .containers-conhecimentos i {
+    font-size: 60px;
+}
+
+    .container-conhecimento p {
+    font-size: 20px;
+    }
+
+    .container-conhecimento {
+        gap: 10px;
+    }
+
+    .containers-conhecimentos {
+        gap:50px;
+    }
+}
+
+@media(max-width:900px) {
+
+    .sobre {
+        gap: 0px;
+    }
+
+    .photo-container-sobre img {
+        width: 200px;
+    }
+
+    .container-text span {
+        font-size: 30px;
+    }
+
+    .text-sobre {
+        font-size: 16px;
+    }
 }
