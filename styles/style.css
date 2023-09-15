@@ -385,13 +385,18 @@ li a:hover::after {
 /*DIV QUE AGRUPA TODOS OS CONHECIMENTOS E SEPARADORES*/
 .containers-conhecimentos-geral {
     display: flex;
-    flex-direction: column;
-    gap: 60px;
+    gap: 80px;
     align-items: center;
 }
 
 /*DIV QUE AGRUPA APENAS OS CONHECIMENTOS POR LINHA*/
-.containers-conhecimentos {
+.containers-conhecimentos-one {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.containers-conhecimentos-two {
     display: flex;
     align-items: center;
     gap: 80px;
@@ -409,7 +414,11 @@ li a:hover::after {
 }
 
 /*ICONES DOS CONHECIMENTOS*/
-.containers-conhecimentos i {
+.containers-conhecimentos-one i {
+    font-size: 80px;
+}
+
+.containers-conhecimentos-two i {
     font-size: 80px;
 }
 
@@ -503,10 +512,9 @@ li a:hover::after {
 }
 
 
-
-
 @media(max-width: 1100px) {
 
+    /*TERCEIRA SEÇÃO*/
     .conhecimentos {
         gap: 100px;
     }
@@ -515,9 +523,13 @@ li a:hover::after {
         font-size: 40px;
     }
 
-    .containers-conhecimentos i {
+    .containers-conhecimentos-one i {
     font-size: 60px;
-}
+    }
+
+    .containers-conhecimentos-two i {
+        font-size: 60px;
+        }
 
     .container-conhecimento p {
     font-size: 20px;
@@ -527,13 +539,21 @@ li a:hover::after {
         gap: 10px;
     }
 
-    .containers-conhecimentos {
+    .containers-conhecimentos-one {
         gap:50px;
+    }
+    .containers-conhecimentos-two {
+        gap:50px;
+    }
+
+    .containers-conhecimentos-geral {
+        gap:60px;
     }
 }
 
 @media(max-width:900px) {
 
+    /*SEGUNDA SEÇÃO*/
     .sobre {
         gap: 0px;
     }
@@ -548,5 +568,35 @@ li a:hover::after {
 
     .text-sobre {
         font-size: 16px;
+        max-width: 400px;
     }
+}
+
+@media(max-width:700px) {
+
+    /*TERCEIRA SEÇÃO*/
+    .conhecimentos {
+        gap: 100px;
+    }
+
+    .container-conhecimento p {
+    font-size: 20px;
+    }
+
+    .container-conhecimento {
+        gap: 10px;
+    }
+
+    .containers-conhecimentos-one {
+        gap:50px;
+    }
+    .containers-conhecimentos-two {
+        gap:50px;
+    }
+
+    .containers-conhecimentos-geral {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
