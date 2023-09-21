@@ -27,14 +27,17 @@ button.addEventListener('click', function() {
 
 //EFEITO BOTÃO DE VOLTAR AO TOPO
 const btnVoltarTopo = document.querySelector(".btn-voltar-topo");
+const btnVoltarTopoMobile = document.querySelector(".btn-voltar-topo-mobile")
 
 window.addEventListener("scroll", ocultarbtn)
 
 function ocultarbtn() {
-    if(window.scrollY > 5) {
-        btnVoltarTopo.style.display = "flex"
+    if(window.scrollY > 300) {
+        btnVoltarTopo.style.display = "flex";
+        btnVoltarTopoMobile.style.display = "flex"
     } else {
-        btnVoltarTopo.style.display = "none"
+        btnVoltarTopo.style.display = "none";
+        btnVoltarTopoMobile.style.display = "none"
     }
 }
 ocultarbtn()
@@ -42,5 +45,7 @@ ocultarbtn()
 
 //FUNÇÃO DO BOTÃO PARA VOLTAR AO TOPO
 btnVoltarTopo.addEventListener("click", function() {
+    window.scrollTo(0,0)})
+btnVoltarTopoMobile.addEventListener("click", function() {
     window.scrollTo(0,0)
 })
