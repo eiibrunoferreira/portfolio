@@ -43,21 +43,8 @@ header{
     animation: aparecer ease 0.5s;
 }
 
-header .menu {
+header .menu-nav-inicial {
     display: flex;
-}
-
-.botao-menu i {
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    display: none;
-}
-
-
-/*CLASS ADICIONADA AO MENU DE NAVEGAÇÃO TOPO NO EFEITO DE ROLAGEM*/
-.flex {
-    display: flex; 
 }
 
 /*ANIMAÇÃO PARA SER COLOCADA NO BOTÃO VOLTAR AO TOPO E NO MENU DE NAVEGAÇÃO TOPO*/
@@ -70,11 +57,29 @@ header .menu {
      }
 }
 
+@keyframes rolartop {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -300px;
+    }
+}
+
+@keyframes rolarbotton {
+    0% {
+
+    }
+    100% {
+
+    }
+}
+
 .btn-voltar-topo {
     cursor: pointer;
     position: fixed;
     display: none;
-    z-index: 1;
+    z-index: 1000;
     color: white;
     bottom: 15px;
     left: 50%;
@@ -86,29 +91,6 @@ header .menu {
 }
 
 .btn-voltar-topo:hover {
-    transition-duration: 0.3s;
-    color: #d4d4d4;
-}
-
-.btn-voltar-topo-mobile {
-    visibility: hidden;
-    cursor: pointer;
-    position: fixed;
-    z-index: 1;
-    color: white;
-    bottom: 15px;
-    right: 5%;
-    transform: translate(-50%, -50%);
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    animation: aparecer ease 1s;
-    background-color: #8f14c0;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-.btn-voltar-topo-mobile:hover {
     transition-duration: 0.3s;
     color: #d4d4d4;
 }
@@ -217,6 +199,30 @@ li a::after {
 /*EFEITO DE HOVER NO TRAÇADO*/
 li a:hover::after {
     transform: scaleX(1);
+}
+
+.btn-menu-inicial-mobile {
+    display: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #111111;
+    padding: 15px 0px;
+    border-radius: 5px;
+}
+
+.mobile-menu-nav-inicial {
+    visibility: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+    border-radius: 5px;
+    padding: 20px 0px;
+    animation: rolartop ease 0.5s;
 }
 
 .photo-container {
@@ -494,7 +500,68 @@ li a:hover::after {
     background-color: rgb(14, 13, 13);
 }
 
+.footer-mobile {
+    background-color: #8d4b00;
+    display: none;
+    visibility: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    justify-content: center;
+    padding: 10px 0px;
+    z-index: 1;
+    animation: aparecer ease 0.5s;
+    align-items: center;
+    gap: 25px;
+    background-color: #202020f3;
+}
 
+.btn-voltar-topo-mobile {
+    display: flex;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.btn-voltar-topo-mobile:hover {
+    transition-duration: 0.3s;
+    background-color: #1d1d1d;
+}
+
+.btn-nav-mobile {
+    border: none;
+    box-shadow: none;
+    display: flex;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    background-color: #111111;
+    padding: 13px 15px;
+    border-radius: 5px;
+}
+
+.mobile-menu-nav {
+    display: none;
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #111111f6;
+    border-radius: 5px;
+    padding: 20px 30px;
+    animation: rolartop ease 0.5s;
+}
+
+/*CLASS PARA SER ADICIONADA EM CAMADAS DISPLAY FLEX*/
+
+.flex {
+    display: flex; 
+}
 
 /*MEDIAQUERIES*/
 
@@ -559,7 +626,7 @@ li a:hover::after {
     }
 
     .containers-conhecimentos-one i {
-    font-size: 60px;
+        font-size: 60px;
     }
 
     .containers-conhecimentos-two i {
@@ -567,7 +634,7 @@ li a:hover::after {
         }
 
     .container-conhecimento p {
-    font-size: 20px;
+        font-size: 20px;
     }
 
     .container-conhecimento {
@@ -608,14 +675,6 @@ li a:hover::after {
 }
 
 @media(max-width:700px) {
-
-    .btn-voltar-topo {
-        font-size: 12px;
-        background-color: #8f14c0;
-        padding: 2px 15px;
-        border-radius: 5px;
-    }
-
     ul {
         font-size: 15px;
     }
@@ -630,7 +689,7 @@ li a:hover::after {
     }
 
     .container-conhecimento p {
-    font-size: 20px;
+        font-size: 20px;
     }
 
     .container-conhecimento {
@@ -663,12 +722,16 @@ li a:hover::after {
         display: none;
     }
 
-    .btn-voltar-topo {
-        visibility: hidden;
+    .btn-menu-inicial-mobile {
+        display: flex;
     }
 
-    .btn-voltar-topo-mobile {
+    .mobile-menu-nav-inicial {
         visibility: visible;
+    }
+
+    .btn-voltar-topo {
+        visibility: hidden;
     }
 
     .titulos {
@@ -684,9 +747,18 @@ li a:hover::after {
         font-size: 40px;
     }
 
+    .menu-nav-inicial ul {
+        display: none;
+    }
+
+
     ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer-mobile {
+        visibility: visible;
     }
 }
