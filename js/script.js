@@ -1,10 +1,13 @@
-//EFEITO ROLAGEM MENU DE NAVEGAÇÃO
-window.addEventListener("scroll", rolagemefeito());
-
-function rolagemefeito() {
-    let nav = document.querySelector('.menu-nav');
-    nav.classList.toggle('flex', window.scrollY > 600);
+var menuNavTopo = document.querySelector(".menu-nav")
+window.addEventListener("scroll", menunavtopo)
+function menunavtopo() {
+    if(window.scrollY > 400) {
+        menuNavTopo.style.display = "flex";
+    } else {
+        menuNavTopo.style.display = "none";
+    }
 }
+
 
 
 //EFEITO BOTÃO LER MAIS E LER MENOS EM RELAÇÃO AO EFEITO DE DEGRADẼ
@@ -18,10 +21,10 @@ buttonLerMais.addEventListener('click', function() {
     separadorTextSobreBottom.classList.toggle('activeSparator');
 
     if (containertext.classList.contains('active')) {
-        return button.textContent = "Ler menos ▲";
+        return buttonLerMais.textContent = "Ler menos ▲";
     }
 
-    button.textContent ="Ler mais... ▼";
+    buttonLerMais.textContent ="Ler mais... ▼";
 });
 
 
@@ -51,6 +54,9 @@ const btnVoltarTopoMobile = document.querySelector(".btn-voltar-topo-mobile")
 btnVoltarTopoMobile.addEventListener("click", function() {
     window.scrollTo(0,0)
 })
+
+
+
 
 
 var btnMenuNavMobileInicial = document.querySelector('.btn-menu-inicial-mobile');

@@ -31,20 +31,16 @@ a {
 
 
 /*MENU DE NAVEGAÇÃO TOPO*/
-header{
+.menu-nav{
+    display: none;
     background-color: #191919;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
-    display: none;
     position: fixed;
     width: 100vw;
     justify-content: center;
     padding: 30px 0px 30px 0px;
     z-index: 1;
     animation: aparecer ease 0.5s;
-}
-
-header .menu-nav-inicial {
-    display: flex;
 }
 
 /*ANIMAÇÃO PARA SER COLOCADA NO BOTÃO VOLTAR AO TOPO E NO MENU DE NAVEGAÇÃO TOPO*/
@@ -563,6 +559,9 @@ li a:hover::after {
     display: flex; 
 }
 
+
+
+
 /*MEDIAQUERIES*/
 
 
@@ -579,8 +578,53 @@ li a:hover::after {
 /*SEGUNDA SEÇÃO*/
 
     .photo-container-sobre img {
-        width: 350px;
+        width: 300px;
     }
+
+    .text-sobre {
+        max-width: 500px;
+        font-size: 20px;
+    }
+
+    .container-text p span {
+        font-size: 40px;
+    }
+
+/*TERCEIRA SEÇÃO*/
+.conhecimentos {
+    gap: 100px;
+}
+
+.conhecimentos h1 {
+    font-size: 60px;
+}
+
+.containers-conhecimentos-one i {
+    font-size: 80px;
+}
+
+.containers-conhecimentos-two i {
+    font-size: 80px;
+    }
+
+.container-conhecimento p {
+    font-size: 25px;
+}
+
+.container-conhecimento {
+    gap: 10px;
+}
+
+.containers-conhecimentos-one {
+    gap:50px;
+}
+.containers-conhecimentos-two {
+    gap:50px;
+}
+
+.containers-conhecimentos-geral {
+    gap:60px;
+}
 
 }
 
@@ -590,6 +634,10 @@ li a:hover::after {
     /*PRIMEIRA SEÇÃO*/
     .photo-container img {
         display: none;
+    }
+
+    .inicial {
+        flex-direction: column;
     }
 
     /*SEGUNDA SEÇÃO*/
@@ -611,7 +659,7 @@ li a:hover::after {
 
     /*TERCEIRA SEÇÃO*/
     .conhecimentos {
-        gap: 100px;
+        gap: 80px;
     }
 
     .conhecimentos h1 {
@@ -624,7 +672,7 @@ li a:hover::after {
 
     .containers-conhecimentos-two i {
         font-size: 60px;
-        }
+    }
 
     .container-conhecimento p {
         font-size: 20px;
@@ -646,6 +694,7 @@ li a:hover::after {
     }
 }
 
+
 @media(min-width:768px) and (max-width:991px) {
 
     /*PRIMEIRA SEÇÃO*/
@@ -653,8 +702,13 @@ li a:hover::after {
         display: none;
     }
 
+    .inicial {
+        flex-direction: column;
+    }
+
     /*SEGUNDA SEÇÃO*/
     .sobre {
+        flex-direction: column;
         gap: 0px;
     }
 
@@ -664,26 +718,12 @@ li a:hover::after {
 
     .container-text span {
         font-size: 30px;
+        padding-bottom: 5px;
     }
 
     .text-sobre {
         font-size: 16px;
         max-width: 400px;
-    }
-}
-
-@media(min-width:481px) and (max-width:767px) {
-    ul {
-        font-size: 15px;
-    }
-
-    header ul {
-        font-size: 15px;
-    }
-
-    /*PRIMEIRA SEÇÃO*/
-    .photo-container img {
-        display: none;
     }
 
     /*TERCEIRA SEÇÃO*/
@@ -691,8 +731,12 @@ li a:hover::after {
         gap: 100px;
     }
 
+    .conhecimentos h1 {
+        font-size: 35px;
+    }
+
     .container-conhecimento p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .container-conhecimento {
@@ -706,28 +750,33 @@ li a:hover::after {
         gap:50px;
     }
 
+    .containers-conhecimentos-one i {
+        font-size: 55px;
+    }
+
+    .containers-conhecimentos-two i {
+        font-size: 55px;
+    }
+
     .containers-conhecimentos-geral {
         display: flex;
         flex-direction: column;
     }
-
 }
 
-@media(max-width:480px) {
-
-    header {
-        background-color: transparent;
-        border-color: transparent;
-        box-shadow: 2px 2px transparent;
-    }
-
-    header ul {
-        display: none;
+@media(min-width:481px) and (max-width:767px) {
+    
+    .menu-nav {
+        visibility: hidden;
     }
 
     /*PRIMEIRA SEÇÃO*/
     .photo-container img {
         display: none;
+    }
+
+    .inicial {
+        flex-direction: column;
     }
 
     .btn-menu-inicial-mobile {
@@ -736,6 +785,10 @@ li a:hover::after {
 
     .mobile-menu-nav-inicial {
         visibility: visible;
+    }
+
+    .ul-mobile-menu-nav {
+        font-size: 14px;
     }
 
     .btn-voltar-topo {
@@ -759,6 +812,126 @@ li a:hover::after {
         display: none;
     }
 
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-mobile {
+        visibility: visible;
+    }
+
+    /*SEGUNDA SEÇÃO*/
+    .sobre {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .photo-container-sobre img {
+        width: 200px;
+    }
+
+    .container-text span {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    .text-sobre {
+        font-size: 14px;
+        max-width: 350px;
+    }
+
+    /*TERCEIRA SEÇÃO*/
+    .conhecimentos {
+        gap: 100px;
+    }
+
+    .conhecimentos h1 {
+        font-size: 35px;
+    }
+
+    .container-conhecimento p {
+        font-size: 16px;
+    }
+
+    .container-conhecimento {
+        gap: 10px;
+    }
+
+    .containers-conhecimentos-one {
+        gap:50px;
+    }
+    .containers-conhecimentos-two {
+        gap:50px;
+    }
+
+    .containers-conhecimentos-one i {
+        font-size: 55px;
+    }
+
+    .containers-conhecimentos-two i {
+        font-size: 55px;
+    }
+
+    .containers-conhecimentos-geral {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .menu-nav {
+        visibility: hidden;
+    }
+
+    /*PRIMEIRA SEÇÃO*/
+    .photo-container img {
+        display: none;
+    }
+
+    .inicial {
+        flex-direction: column;
+    }
+
+    .btn-menu-inicial-mobile {
+        display: flex;
+    }
+
+    .ul-mobile-menu-nav {
+        font-size: 14px;
+    }
+
+    .mobile-menu-nav-inicial {
+        visibility: visible;
+    }
+
+    .btn-menu-inicial-mobile {
+        padding: 15px 0px;
+    }
+
+    .btn-voltar-topo {
+        visibility: hidden;
+    }
+
+    .titulos {
+        margin-top: 80px;
+        align-items: center;
+    }
+
+    .titulo-estatico {
+        font-size: 30px;
+    }
+
+    .titulo-dinamico p {
+        font-size: 30px;
+    }
+
+    .menu-nav-inicial ul {
+        display: none;
+    }
 
     ul {
         display: flex;
@@ -768,5 +941,62 @@ li a:hover::after {
 
     .footer-mobile {
         visibility: visible;
+    }
+
+    /*SEGUNDA SEÇÃO*/
+    .sobre {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .photo-container-sobre img {
+        width: 200px;
+    }
+
+    .container-text span {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    .text-sobre {
+        font-size: 14px;
+        max-width: 350px;
+    }
+
+    /*TERCEIRA SEÇÃO*/
+    .conhecimentos {
+        gap: 100px;
+    }
+
+    .conhecimentos h1 {
+        font-size: 35px;
+    }
+
+    .container-conhecimento p {
+        font-size: 16px;
+    }
+
+    .container-conhecimento {
+        gap: 10px;
+    }
+
+    .containers-conhecimentos-one {
+        gap:50px;
+    }
+    .containers-conhecimentos-two {
+        gap:50px;
+    }
+
+    .containers-conhecimentos-one i {
+        font-size: 55px;
+    }
+
+    .containers-conhecimentos-two i {
+        font-size: 55px;
+    }
+
+    .containers-conhecimentos-geral {
+        display: flex;
+        flex-direction: column;
     }
 }
