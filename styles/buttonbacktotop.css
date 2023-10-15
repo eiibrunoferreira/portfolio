@@ -1,0 +1,22 @@
+/*Botão de voltar ao topo*/
+
+
+.btn-voltar-topo {
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    z-index: 1000;
+    color: white;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    animation: aparecer ease 1s;
+}
+
+.btn-voltar-topo:hover {
+    transition-duration: 0.3s;
+    color: #d4d4d4;
+}

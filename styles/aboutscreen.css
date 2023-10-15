@@ -1,0 +1,117 @@
+/*SEGUNDA SEÇÃO, TELA DE SOBRE*/
+
+
+.sobre {
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 15px;
+}
+
+/*DIV DA FOTO DA TELA DE SOBRE*/
+.photo-container-sobre {
+    position: relative;
+}
+
+/*FOTO DA TELA DE SOBRE*/
+.photo-container-sobre img {
+    width: 400px;
+    border-radius: 50%;
+    border-left: 5px solid rgb(143, 20, 192);
+    box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*LADO DO TEXTO DA TELA SOBRE*/
+.container-right-sobre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*DIV QUE AGRUPA TITULO, TEXTO, BOTÃO DE LER MAIS E MENOS...*/
+.container-text {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+/*TEXTO SOBRE MIM COM UMA CLASSE PARA FAZER EFEITO DE DEGRADẼ*/
+.container-text.active {
+    height: auto;
+}
+
+/*ATRIBUTO ADICIONADO AO TEXTO PARA ELE SUMIR CONFORME O DEGRADẼ*/
+.container-text.active ::before {
+    visibility: hidden;
+}
+
+/*TITULO SOBRE*/
+.container-text p span {
+    position: relative;
+}
+
+/*TRAÇADO ABAIXO DO TÍTULO*/
+.container-text p span::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: #8f14c0;
+}
+
+/*TEXTO SOBRE MIM*/
+.text-sobre {
+    overflow: hidden;
+    max-width: 600px;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/*CLASSE CRIADA PARA COLOCAR NAS PALAVRAS EM DESTAQUE, ASSIM ADICIONANDO UM FUNDO DIFERENCIADO*/
+.color-purple-text {
+    background-color: rgb(108, 13, 146);
+}
+
+/*DEGRADÊ DO TEXTO SOBRE*/
+.text-sobre::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #202020);
+}
+
+/*TRAÇADO INFERIOIR TEXTO SOBRE*/
+.text-sobre.activeSparator ::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 2px;
+    width: 70%;
+    background-color: rgb(143, 20, 192);
+}
+
+.btn-ler-mais {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-ler-mais:hover {
+    transition-duration: 0.5s;
+    color: #8f14c0;
+}

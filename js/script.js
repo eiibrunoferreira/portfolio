@@ -1,10 +1,13 @@
 var menuNavTopo = document.querySelector(".menu-nav")
+var menuNavHome = document.querySelector(".menu-nav-inicial")
 window.addEventListener("scroll", menunavtopo)
 function menunavtopo() {
     if(window.scrollY > 400) {
         menuNavTopo.style.display = "flex";
+        menuNavHome.style.visibility = "hidden";
     } else {
         menuNavTopo.style.display = "none";
+        menuNavHome.style.visibility = "visible";
     }
 }
 
@@ -30,17 +33,14 @@ buttonLerMais.addEventListener('click', function() {
 
 //EFEITO BOTÃO DE VOLTAR AO TOPO
 const btnVoltarTopo = document.querySelector(".btn-voltar-topo");
-const footerMobile = document.querySelector(".footer-mobile");
 
 window.addEventListener("scroll", ocultarbtn)
 
 function ocultarbtn() {
     if(window.scrollY > 300) {
         btnVoltarTopo.style.display = "flex";
-        footerMobile.style.display = "flex";
     } else {
         btnVoltarTopo.style.display = "none";
-        footerMobile.style.display = "none";
     }
 }
 ocultarbtn()

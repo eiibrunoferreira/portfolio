@@ -1,0 +1,33 @@
+/*Animaçẽs do site*/
+
+
+/*ANIMAÇÃO EFEITO TITULO PÁGINA HOME*/
+@keyframes escrevendo {
+    50% {
+        left: 103%;
+    }
+}
+
+/*ANIMAÇÃO DE FLUTUAR NA FOTO NA PÁGINA HOME*/
+@keyframes flutuar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/*ANIMAÇÃO PARA SER COLOCADA NO BOTÃO VOLTAR AO TOPO E NO MENU DE NAVEGAÇÃO TOPO*/
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

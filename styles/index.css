@@ -1,0 +1,47 @@
+/*Ìndice do site*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: #181818;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+body{
+    background-color: #191919;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*CLASS PARA SER ADICIONADA EM CAMADAS DISPLAY FLEX*/
+.flex {
+    display: flex; 
+}
+
+/*ATRIBUTOS ADICIONADO Á TODOS QUE CONTÉM A SECTION*/
+section {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    top: 0;
+    left: 0;
+}
