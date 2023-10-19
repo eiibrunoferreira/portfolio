@@ -81,7 +81,7 @@
         display: none;
     }
 
-    .inicial {
+    .homescreen {
         flex-direction: column;
     }
 
@@ -147,7 +147,7 @@
         display: none;
     }
 
-    .inicial {
+    .homescreen {
         flex-direction: column;
     }
 
@@ -211,7 +211,7 @@
 
 @media(min-width:481px) and (max-width:767px) {
     
-    .menu-nav {
+    .header {
         visibility: hidden;
     }
 
@@ -220,7 +220,7 @@
         display: none;
     }
 
-    .inicial {
+    .homescreen {
         flex-direction: column;
     }
 
@@ -328,7 +328,7 @@
 
 @media(max-width:480px) {
 
-    .menu-nav {
+    .header {
         visibility: hidden;
     }
 
@@ -337,7 +337,7 @@
         display: none;
     }
 
-    .inicial {
+    .homescreen {
         flex-direction: column;
     }
 
