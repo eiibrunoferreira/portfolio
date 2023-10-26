@@ -1,7 +1,7 @@
 /*SEGUNDA SEÇÃO, TELA DE SOBRE*/
 
 
-.sobre {
+.about {
     background-color: #202020;
     display: flex;
     align-items: center;
@@ -11,12 +11,12 @@
 }
 
 /*DIV DA FOTO DA TELA DE SOBRE*/
-.photo-container-sobre {
+.aboutscreen-photo {
     position: relative;
 }
 
 /*FOTO DA TELA DE SOBRE*/
-.photo-container-sobre img {
+.aboutscreen-photo img {
     width: 400px;
     border-radius: 50%;
     border-left: 5px solid rgb(143, 20, 192);
@@ -24,7 +24,7 @@
 }
 
 /*LADO DO TEXTO DA TELA SOBRE*/
-.container-right-sobre {
+.about-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
 }
 
 /*DIV QUE AGRUPA TITULO, TEXTO, BOTÃO DE LER MAIS E MENOS...*/
-.container-text {
+.about-container-text {
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -42,22 +42,22 @@
 }
 
 /*TEXTO SOBRE MIM COM UMA CLASSE PARA FAZER EFEITO DE DEGRADẼ*/
-.container-text.active {
+.about-container-text.active {
     height: auto;
 }
 
 /*ATRIBUTO ADICIONADO AO TEXTO PARA ELE SUMIR CONFORME O DEGRADẼ*/
-.container-text.active ::before {
+.about-container-text.active ::before {
     visibility: hidden;
 }
 
 /*TITULO SOBRE*/
-.container-text p span {
+.about-container-text p span {
     position: relative;
 }
 
 /*TRAÇADO ABAIXO DO TÍTULO*/
-.container-text p span::after {
+.about-container-text p span::after {
     content: "";
     position: absolute;
     width: 50%;
@@ -68,7 +68,7 @@
 }
 
 /*TEXTO SOBRE MIM*/
-.text-sobre {
+.about-text {
     overflow: hidden;
     max-width: 600px;
     font-size: 20px;
@@ -82,7 +82,7 @@
 }
 
 /*DEGRADÊ DO TEXTO SOBRE*/
-.text-sobre::before {
+.about-text::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -92,7 +92,7 @@
 }
 
 /*TRAÇADO INFERIOIR TEXTO SOBRE*/
-.text-sobre.activeSparator ::after {
+.about-text.activeSparator ::after {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -102,7 +102,7 @@
     background-color: rgb(143, 20, 192);
 }
 
-.btn-ler-mais {
+.btn-read-more {
     display: flex;
     cursor: pointer;
     border: none;
@@ -111,7 +111,7 @@
     color: white;
 }
 
-.btn-ler-mais:hover {
+.btn-read-more:hover {
     transition-duration: 0.5s;
     color: #8f14c0;
 }

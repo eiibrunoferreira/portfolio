@@ -1,7 +1,7 @@
 /*TERCEIRA SEÇÃO, TELA DE CONHECIMENTOS*/
 
 
-.conhecimentos {
+.knowledge {
     background-color: #191919;
     color: white;
     display: flex;
@@ -11,7 +11,7 @@
     gap: 130px;
 }
 
-.conhecimentos h1 {
+.knowledge h1 {
     position: relative;
     font-size: 50px;
     background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
@@ -23,7 +23,7 @@
 }
 
 /*TRAÇADO SUPERIOR DO TÍTULO*/
-.conhecimentos h1::before {
+.knowledge h1::before {
     content: "";
     position: absolute;
     width: 50%;
@@ -34,7 +34,7 @@
 }
 
 /*TRAÇADO INFERIOR DO TÍTULO CONHECIMENTO*/
-.conhecimentos h1::after {
+.knowledge h1::after {
     content: "";
     position: absolute;
     width: 50%;
@@ -56,27 +56,27 @@
 }
 
 /*DIV QUE AGRUPA TODOS OS CONHECIMENTOS E SEPARADORES*/
-.containers-conhecimentos-geral {
+.knowledge-container-all {
     display: flex;
     gap: 80px;
     align-items: center;
 }
 
 /*DIV QUE AGRUPA APENAS OS CONHECIMENTOS POR LINHA*/
-.containers-conhecimentos-one {
+.first-container-knowledge {
     display: flex;
     align-items: center;
     gap: 80px;
 }
 
-.containers-conhecimentos-two {
+.second-container-knowledge {
     display: flex;
     align-items: center;
     gap: 80px;
 }
 
 /*DIV QUE AGRUPA ICONE, NOME E TRAÇADO ABAIXO CADA CONHECIMENTO*/
-.container-conhecimento {
+.container-knowledge {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -87,23 +87,23 @@
 }
 
 /*ICONES DOS CONHECIMENTOS*/
-.containers-conhecimentos-one i {
+.first-container-knowledge i {
     font-size: 80px;
 }
 
-.containers-conhecimentos-two i {
+.second-container-knowledge i {
     font-size: 80px;
 }
 
 /*NOME DE CADA CONHECIMENTO*/
-.container-conhecimento p {
+.container-knowledge p {
     font-size: 30px;
     cursor: pointer;
     margin-bottom: 15px;
 }
 
 /*TRAÇADO DE CADA CONHECIMENTO JÁ COM EFEITO DE DEGRADẼ*/
-.container-conhecimento ::after {
+.container-knowledge ::after {
     content: "";
     height: 2px;
     width: 100%;
@@ -116,6 +116,6 @@
 }
 
 /*EFEITO DE ZOOM AO PASSAR O MOUSE POR CADA CONHECIMENTO*/
-.container-conhecimento:hover {
+.container-knowledge:hover {
     transform: scale(1.25, 1.25);
 }

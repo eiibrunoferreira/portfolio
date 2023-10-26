@@ -3,7 +3,7 @@
 @import "./buttonbacktotop.css"; /*Botão de voltar ao topo*/
 @import "./homescreen.css"; /*Tela de inicio*/
 @import "./aboutscreen.css"; /*Tela de sobre*/
-@import "./understandscreen.css"; /*Tela de conhecimentos*/
+@import "./knowledgescreen.css"; /*Tela de conhecimentos*/
 @import "./projectsscreen.css"; /*Tela de projetos*/
 @import "./contactscreen.css"; /*Tela de contato*/
 @import "./keyframes.css"; /*Animações*/
@@ -15,59 +15,59 @@
 @media(min-width:1200px) and (max-width: 1919px) {
 
 /*PRIMEIRA SEÇÃO*/
-    .photo-container img {
+    .homescreen-photo img {
         width: 500px;
         height: 500px;
     }
     
 /*SEGUNDA SEÇÃO*/
 
-    .photo-container-sobre img {
+    .aboutscreen-photo img {
         width: 300px;
     }
 
-    .text-sobre {
+    .about-text {
         max-width: 500px;
         font-size: 20px;
     }
 
-    .container-text p span {
+    .about-container-text p span {
         font-size: 40px;
     }
 
 /*TERCEIRA SEÇÃO*/
-.conhecimentos {
+.knowledge {
     gap: 100px;
 }
 
-.conhecimentos h1 {
+.knowledge h1 {
     font-size: 60px;
 }
 
-.containers-conhecimentos-one i {
+.first-container-knowledge i {
     font-size: 80px;
 }
 
-.containers-conhecimentos-two i {
+.second-container-knowledge i {
     font-size: 80px;
     }
 
-.container-conhecimento p {
+.container-knowledge p {
     font-size: 25px;
 }
 
-.container-conhecimento {
+.container-knowledge {
     gap: 10px;
 }
 
-.containers-conhecimentos-one {
+.first-container-knowledge {
     gap:50px;
 }
-.containers-conhecimentos-two {
+.second-container-knowledge {
     gap:50px;
 }
 
-.containers-conhecimentos-geral {
+.knowledge-container-all {
     gap:60px;
 }
 
@@ -77,7 +77,7 @@
 @media(min-width:992px) and (max-width: 1199px) {
 
     /*PRIMEIRA SEÇÃO*/
-    .photo-container img {
+    .homescreen-photo img {
         display: none;
     }
 
@@ -87,54 +87,54 @@
 
     /*SEGUNDA SEÇÃO*/
 
-    .photo-container-sobre img {
+    .aboutscreen-photo img {
         width: 250px;
     }
 
-    .text-sobre {
+    .about-text {
         max-width: 400px;
         font-size: 16px;
     }
 
-    .container-text p span {
+    .about-container-text p span {
         font-size: 35px;
         padding-bottom: 5px;
     }
 
 
     /*TERCEIRA SEÇÃO*/
-    .conhecimentos {
+    .knowledge {
         gap: 80px;
     }
 
-    .conhecimentos h1 {
+    .knowledge h1 {
         font-size: 40px;
     }
 
-    .containers-conhecimentos-one i {
+    .first-container-knowledge i {
         font-size: 60px;
     }
 
-    .containers-conhecimentos-two i {
+    .second-container-knowledge i {
         font-size: 60px;
     }
 
-    .container-conhecimento p {
+    .container-knowledge p {
         font-size: 20px;
     }
 
-    .container-conhecimento {
+    .container-knowledge {
         gap: 10px;
     }
 
-    .containers-conhecimentos-one {
+    .first-container-knowledge {
         gap:50px;
     }
-    .containers-conhecimentos-two {
+    .second-container-knowledge {
         gap:50px;
     }
 
-    .containers-conhecimentos-geral {
+    .knowledge-container-all {
         gap:60px;
     }
 }
@@ -143,7 +143,7 @@
 @media(min-width:768px) and (max-width:991px) {
 
     /*PRIMEIRA SEÇÃO*/
-    .photo-container img {
+    .homescreen-photo img {
         display: none;
     }
 
@@ -152,58 +152,58 @@
     }
 
     /*SEGUNDA SEÇÃO*/
-    .sobre {
+    .about {
         flex-direction: column;
         gap: 0px;
     }
 
-    .photo-container-sobre img {
+    .aboutscreen-photo img {
         width: 200px;
     }
 
-    .container-text span {
+    .about-container-text span {
         font-size: 30px;
         padding-bottom: 5px;
     }
 
-    .text-sobre {
+    .about-text {
         font-size: 16px;
         max-width: 400px;
     }
 
     /*TERCEIRA SEÇÃO*/
-    .conhecimentos {
+    .knowledge {
         gap: 100px;
     }
 
-    .conhecimentos h1 {
+    .knowledge h1 {
         font-size: 35px;
     }
 
-    .container-conhecimento p {
+    .container-knowledge p {
         font-size: 16px;
     }
 
-    .container-conhecimento {
+    .container-knowledge {
         gap: 10px;
     }
 
-    .containers-conhecimentos-one {
+    .first-container-knowledge {
         gap:50px;
     }
-    .containers-conhecimentos-two {
+    .second-container-knowledge {
         gap:50px;
     }
 
-    .containers-conhecimentos-one i {
+    .first-container-knowledge i {
         font-size: 55px;
     }
 
-    .containers-conhecimentos-two i {
+    .second-container-knowledge i {
         font-size: 55px;
     }
 
-    .containers-conhecimentos-geral {
+    .knowledge-container-all {
         display: flex;
         flex-direction: column;
     }
@@ -216,7 +216,7 @@
     }
 
     /*PRIMEIRA SEÇÃO*/
-    .photo-container img {
+    .homescreen-photo img {
         display: none;
     }
 
@@ -240,20 +240,20 @@
         visibility: hidden;
     }
 
-    .titulos {
+    .titles {
         margin-top: 80px;
         align-items: center;
     }
 
-    .titulo-estatico {
+    .static-title {
         font-size: 40px;
     }
 
-    .titulo-dinamico p {
+    .dynamic-title p {
         font-size: 40px;
     }
 
-    .menu-nav-inicial ul {
+    .homescreen-navbar ul {
         display: none;
     }
 
@@ -268,58 +268,58 @@
     }
 
     /*SEGUNDA SEÇÃO*/
-    .sobre {
+    .about {
         flex-direction: column;
         gap: 0px;
     }
 
-    .photo-container-sobre img {
+    .aboutscreen-photo img {
         width: 200px;
     }
 
-    .container-text span {
+    .about-container-text span {
         font-size: 30px;
         padding-bottom: 5px;
     }
 
-    .text-sobre {
+    .about-text {
         font-size: 14px;
         max-width: 350px;
     }
 
     /*TERCEIRA SEÇÃO*/
-    .conhecimentos {
+    .knowledge {
         gap: 100px;
     }
 
-    .conhecimentos h1 {
+    .knowledge h1 {
         font-size: 35px;
     }
 
-    .container-conhecimento p {
+    .container-knowledge p {
         font-size: 16px;
     }
 
-    .container-conhecimento {
+    .container-knowledge {
         gap: 10px;
     }
 
-    .containers-conhecimentos-one {
+    .first-container-knowledge {
         gap:50px;
     }
-    .containers-conhecimentos-two {
+    .second-container-knowledge {
         gap:50px;
     }
 
-    .containers-conhecimentos-one i {
+    .first-container-knowledge i {
         font-size: 55px;
     }
 
-    .containers-conhecimentos-two i {
+    .second-container-knowledge i {
         font-size: 55px;
     }
 
-    .containers-conhecimentos-geral {
+    .knowledge-container-all {
         display: flex;
         flex-direction: column;
     }
@@ -333,7 +333,7 @@
     }
 
     /*PRIMEIRA SEÇÃO*/
-    .photo-container img {
+    .homescreen-photo img {
         display: none;
     }
 
@@ -361,27 +361,21 @@
         visibility: hidden;
     }
 
-    .titulos {
+    .titles {
         margin-top: 80px;
         align-items: center;
     }
 
-    .titulo-estatico {
+    .static-title {
         font-size: 30px;
     }
 
-    .titulo-dinamico p {
+    .dynamic-title p {
         font-size: 30px;
     }
 
-    .menu-nav-inicial ul {
+    .homescreen-navbar ul {
         display: none;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .footer-mobile {
@@ -389,58 +383,58 @@
     }
 
     /*SEGUNDA SEÇÃO*/
-    .sobre {
+    .about {
         flex-direction: column;
         gap: 0px;
     }
 
-    .photo-container-sobre img {
+    .aboutscreen-photo img {
         width: 200px;
     }
 
-    .container-text span {
+    .about-container-text span {
         font-size: 30px;
         padding-bottom: 5px;
     }
 
-    .text-sobre {
+    .about-text {
         font-size: 14px;
         max-width: 350px;
     }
 
     /*TERCEIRA SEÇÃO*/
-    .conhecimentos {
+    .knowledge {
         gap: 100px;
     }
 
-    .conhecimentos h1 {
+    .knowledge h1 {
         font-size: 35px;
     }
 
-    .container-conhecimento p {
+    .container-knowledge p {
         font-size: 16px;
     }
 
-    .container-conhecimento {
+    .container-knowledge {
         gap: 10px;
     }
 
-    .containers-conhecimentos-one {
+    .first-container-knowledge {
         gap:50px;
     }
-    .containers-conhecimentos-two {
+    .second-container-knowledge {
         gap:50px;
     }
 
-    .containers-conhecimentos-one i {
+    .first-container-knowledge i {
         font-size: 55px;
     }
 
-    .containers-conhecimentos-two i {
+    .second-container-knowledge i {
         font-size: 55px;
     }
 
-    .containers-conhecimentos-geral {
+    .knowledge-container-all {
         display: flex;
         flex-direction: column;
     }

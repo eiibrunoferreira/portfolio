@@ -9,13 +9,13 @@
 }
 
 /*LADO DOS DOS TÍTULOS E PÁGINAS*/
-.container-left-main {
+.titles-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.titulos {
+.titles {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,28 +23,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.titulo-estatico {
+.static-title {
     color: white;
     font-size: 50px;
     font-weight: 400;
 }
 
-.titulo-dinamico {
+.dynamic-title {
     display: flex;
     overflow: hidden;
     padding-right: 20px;
 }
 
-.titulo-dinamico p {
+.dynamic-title p {
     color: rgb(143, 20, 192);
     font-size: 50px;
 }
 
-.titulo-dinamico p span {
+.dynamic-title p span {
     position: relative;
 }
 
-.titulo-dinamico p span::after {
+.dynamic-title p span::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -57,7 +57,7 @@
 
 
 /*PÁGINAS LOCALIZADAS ABAIXO DOS TÍTULOS*/
-ul {
+.homescreen-navbar ul {
     list-style: none;
     display: flex;
     gap: 50px;
@@ -66,16 +66,16 @@ ul {
     font-weight: 600;
 }
 
-li {
+.homescreen-navbar li {
     cursor: pointer;
 }
 
-li a {
+.homescreen-navbar li a {
     position: relative;
 }
 
-/*TRAÇADO QUANDO PASSADO MOUSE NAS PÁGINAS TANTO NA DO TOPO QUANTO NA DA TELA DE INICIO*/
-li a::after {
+/*TRAÇADO QUANDO PASSADO MOUSE NAS PÁGINAS*/
+.homescreen-navbar li a::after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -88,7 +88,7 @@ li a::after {
 }
 
 /*EFEITO DE HOVER NO TRAÇADO*/
-li a:hover::after {
+.homescreen-navbar li a:hover::after {
     transform: scaleX(1);
 }
 
@@ -116,12 +116,12 @@ li a:hover::after {
     animation: rolartop ease 0.5s;
 }
 
-.photo-container {
+.homescreen-photo {
     display: flex;
 }
 
 /*FOTO DA TELA DE INICIO*/
-.photo-container img {
+.homescreen-photo img {
     width: 700px;
     height: 700px;
     transform: translateY(0px);

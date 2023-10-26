@@ -12,3 +12,39 @@
     z-index: 1;
     animation: aparecer ease 0.5s;
 }
+
+/*PÁGINAS LOCALIZADAS ABAIXO DOS TÍTULOS*/
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar li a {
+    position: relative;
+}
+
+/*TRAÇADO QUANDO PASSADO MOUSE NAS PÁGINAS*/
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: rgb(143, 20, 192);
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+}
+
+/*EFEITO DE HOVER NO TRAÇADO*/
+.navbar li a:hover::after {
+    transform: scaleX(1);
+}
