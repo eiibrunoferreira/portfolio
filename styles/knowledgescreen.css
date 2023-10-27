@@ -44,17 +44,6 @@
     background-color: #ffffff;
 }
 
-/*ANIMAÇÃO DO DEGRADẼ DE CORES DO TÍTULO*/
-@keyframes degrade {
-    0% {
-        background-position-x: 0%;
-    }
-
-    100% {
-        background-position: 400%;
-    }
-}
-
 /*DIV QUE AGRUPA TODOS OS CONHECIMENTOS E SEPARADORES*/
 .knowledge-container-all {
     display: flex;

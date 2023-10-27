@@ -31,3 +31,14 @@
         opacity: 1;
      }
 }
+
+/*ANIMAÇÃO DO DEGRADẼ DE CORES DO TÍTULO CONHECIMENTOS E RISCO EM BAIXO DE CADA UM */
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}

@@ -1,6 +1,5 @@
 /*SEGUNDA SEÇÃO, TELA DE SOBRE*/
 
-
 .about {
     background-color: #202020;
     display: flex;
@@ -114,4 +113,8 @@
 .btn-read-more:hover {
     transition-duration: 0.5s;
     color: #8f14c0;
+}
+
+.btn-read-more:active {
+    color: white;
 }

@@ -15,8 +15,3 @@
     gap: 5px;
     animation: aparecer ease 1s;
 }
-
-.btn-back-to-top:hover {
-    transition-duration: 0.3s;
-    color: #d4d4d4;
-}

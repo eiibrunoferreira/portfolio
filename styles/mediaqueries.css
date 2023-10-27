@@ -1,0 +1,140 @@
+/*MEDIAQUERIES = RESPONSIVIDADE DO SITE*/
+
+
+
+/*TELAS GRANDES*/
+@media(min-width:1350px) and (max-width: 1919px) {
+
+/*PRIMEIRA SEÇÃO = TELA DE INICIO*/
+    .homescreen-photo img {
+        width: 500px;
+        height: 500px;
+    }
+
+/*SEGUNDA SEÇÃO = TELA DE SOBRE*/
+    .aboutscreen-photo img {
+        width: 300px;
+    }
+
+    .about-container-text p span {
+        font-size: 40px;
+    }
+
+    .about-text {
+        max-width: 500px;
+        font-size: 20px;
+    }
+    
+/*TERCEIRA SEÇÃO = TELA DE CONHECIEMNTOS*/
+    .knowledge {
+        gap: 100px;
+    }
+
+    .knowledge h1 {
+        font-size: 60px;
+    }
+
+    .knowledge-container-all {
+        gap:60px;
+    }
+
+    .first-container-knowledge {
+        gap:50px;
+    }
+
+    .first-container-knowledge i {
+        font-size: 80px;
+    }
+
+    .second-container-knowledge {
+        gap:50px;
+    }
+
+    .second-container-knowledge i {
+        font-size: 80px;
+    }
+
+    .container-knowledge {
+        gap: 10px;
+    }
+    
+    .container-knowledge p {
+        font-size: 25px;
+    }
+
+}
+
+
+
+/*TELAS MENORES FIXAS QUE NÃO VÃO MUDAR*/
+@media(max-width: 1349px) {
+
+/*PRIMEIRA SEÇÃO = TELA DE INICIO*/
+    .homescreen-photo img {
+        display: none;
+    }
+
+    .homescreen {
+        flex-direction: column;
+    }
+}
+
+
+
+/*TELAS MENORES*/
+@media(min-width:992px) and (max-width: 1349px) {
+
+/*SEGUNDA SEÇÃO = TELA DE SOBRE*/
+    .aboutscreen-photo img {
+        width: 250px;
+    }
+
+    .about-text {
+        max-width: 400px;
+        font-size: 16px;
+    }
+
+    .about-container-text p span {
+        font-size: 35px;
+        padding-bottom: 5px;
+    }
+
+
+/*TERCEIRA SEÇÃO = TELA DE CONHECIMENTOS*/
+    .knowledge {
+        gap: 80px;
+    }
+
+    .knowledge h1 {
+        font-size: 40px;
+    }
+
+    .knowledge-container-all {
+        gap:60px;
+    }
+
+    .first-container-knowledge {
+        gap:50px;
+    }
+
+    .first-container-knowledge i {
+        font-size: 60px;
+    }
+
+    .second-container-knowledge {
+        gap:50px;
+    }
+
+    .second-container-knowledge i {
+        font-size: 60px;
+    }
+
+    .container-knowledge {
+        gap: 10px;
+    }
+
+    .container-knowledge p {
+        font-size: 20px;
+    }
+
+}
