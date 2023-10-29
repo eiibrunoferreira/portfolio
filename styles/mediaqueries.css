@@ -3,26 +3,43 @@
 
 
 /*TELAS GRANDES*/
-@media(min-width:1350px) and (max-width: 1919px) {
+@media(min-width:1350px) and (max-width: 1900px) {
 
 /*PRIMEIRA SEÇÃO = TELA DE INICIO*/
-    .homescreen-photo img {
-        width: 500px;
-        height: 500px;
+    .photo-homescreen img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .static-title {
+        font-size: 35px;
+    }
+
+    .dynamic-title p {
+        font-size: 35px;
+    }
+
+    .homescreen .text-container {
+        font-size: 18px;
+        max-width: 500px;
+    }
+    
+    .homescreen-navbar ul {
+        font-size: 15px;
     }
 
 /*SEGUNDA SEÇÃO = TELA DE SOBRE*/
     .aboutscreen-photo img {
-        width: 300px;
+        width: 230px;
     }
 
     .about-container-text p span {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .about-text {
-        max-width: 500px;
-        font-size: 20px;
+        max-width: 480px;
+        font-size: 17px;
     }
     
 /*TERCEIRA SEÇÃO = TELA DE CONHECIEMNTOS*/
@@ -31,7 +48,7 @@
     }
 
     .knowledge h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .knowledge-container-all {
@@ -43,7 +60,7 @@
     }
 
     .first-container-knowledge i {
-        font-size: 80px;
+        font-size: 45px;
     }
 
     .second-container-knowledge {
@@ -51,7 +68,7 @@
     }
 
     .second-container-knowledge i {
-        font-size: 80px;
+        font-size: 45px;
     }
 
     .container-knowledge {
@@ -59,30 +76,36 @@
     }
     
     .container-knowledge p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
 }
-
-
-
-/*TELAS MENORES FIXAS QUE NÃO VÃO MUDAR*/
-@media(max-width: 1349px) {
-
-/*PRIMEIRA SEÇÃO = TELA DE INICIO*/
-    .homescreen-photo img {
-        display: none;
-    }
-
-    .homescreen {
-        flex-direction: column;
-    }
-}
-
-
 
 /*TELAS MENORES*/
 @media(min-width:992px) and (max-width: 1349px) {
+
+/*PRIMEIRA SEÇÃO*/
+    .photo-homescreen img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .static-title {
+        font-size: 35px;
+    }
+
+    .dynamic-title p {
+        font-size: 35px;
+    }
+
+    .homescreen .text-container {
+        font-size: 18px;
+        max-width: 500px;
+    }
+    
+    .homescreen-navbar ul {
+        font-size: 15px;
+    }
 
 /*SEGUNDA SEÇÃO = TELA DE SOBRE*/
     .aboutscreen-photo img {

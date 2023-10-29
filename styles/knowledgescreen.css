@@ -2,19 +2,19 @@
 
 
 .knowledge {
-    background-color: #191919;
-    color: white;
+    background-color: #ebebeb;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 130px;
+    gap: 120px;
     padding: 50px 0px;
 }
 
 .knowledge h1 {
     position: relative;
-    font-size: 50px;
+    font-size: 45px;
     background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
     background-size: 400% 100%;
     animation: degrade 10s linear infinite alternate;
@@ -28,10 +28,10 @@
     content: "";
     position: absolute;
     width: 50%;
-    height: 2px;
+    height: 3px;
     top: 0;
     right: 0;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 /*TRAÇADO INFERIOR DO TÍTULO CONHECIMENTO*/
@@ -39,16 +39,16 @@
     content: "";
     position: absolute;
     width: 50%;
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 /*DIV QUE AGRUPA TODOS OS CONHECIMENTOS E SEPARADORES*/
 .knowledge-container-all {
     display: flex;
-    gap: 80px;
+    gap: 70px;
     align-items: center;
 }
 
@@ -56,13 +56,13 @@
 .first-container-knowledge {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
 }
 
 .second-container-knowledge {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
 }
 
 /*DIV QUE AGRUPA ICONE, NOME E TRAÇADO ABAIXO CADA CONHECIMENTO*/
@@ -78,16 +78,16 @@
 
 /*ICONES DOS CONHECIMENTOS*/
 .first-container-knowledge i {
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .second-container-knowledge i {
-    font-size: 80px;
+    font-size: 50px;
 }
 
 /*NOME DE CADA CONHECIMENTO*/
 .container-knowledge p {
-    font-size: 30px;
+    font-size: 22px;
     cursor: pointer;
     margin-bottom: 15px;
 }
@@ -95,7 +95,7 @@
 /*TRAÇADO DE CADA CONHECIMENTO JÁ COM EFEITO DE DEGRADẼ*/
 .container-knowledge ::after {
     content: "";
-    height: 2px;
+    height: 3px;
     width: 100%;
     background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
     position: absolute;

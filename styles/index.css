@@ -12,17 +12,17 @@ html {
 }
 
 ::-webkit-scrollbar {
-    background-color: #181818;
+    background-color: #ffffff;
     width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);
+    background-color: #191919;
     border-radius: 10px;
 }
 
 body{
-    background-color: #191919;
+    background-color: #ebebeb;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }

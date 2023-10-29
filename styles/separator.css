@@ -1,0 +1,25 @@
+.separator {
+    display: flex;
+    justify-content: space-between;
+    content: "";
+    height: 2px;
+    width: 100vw;
+    padding-left: 170px;
+    padding-right: 170px;
+}
+
+.separator-left {
+    display: flex;
+    content: "";
+    height: 2px;
+    width: 35vw;
+    background-color: rgb(201, 201, 201);
+}
+
+.separator-right {
+    display: flex;
+    content: "";
+    height: 2px;
+    width: 35vw;
+    background-color: rgb(201, 201, 201);
+}

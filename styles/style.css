@@ -7,6 +7,7 @@
 @import "./knowledgescreen.css"; /*Tela de conhecimentos*/
 @import "./projectsscreen.css"; /*Tela de projetos*/
 @import "./contactscreen.css"; /*Tela de contato*/
+@import "./separator.css"; /*Separadores*/
 @import "./keyframes.css"; /*Animações*/
 @import "./mediaqueries.css"; /*Responsividade do site*/
 
