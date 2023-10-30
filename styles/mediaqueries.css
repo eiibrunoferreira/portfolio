@@ -7,8 +7,7 @@
 
 /*PRIMEIRA SEÇÃO = TELA DE INICIO*/
     .photo-homescreen img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
     }
 
     .static-title {
@@ -21,7 +20,7 @@
 
     .homescreen .text-container {
         font-size: 18px;
-        max-width: 500px;
+        max-width: 450px;
     }
     
     .homescreen-navbar ul {
@@ -35,6 +34,7 @@
 
     .about-container-text p span {
         font-size: 35px;
+        padding-bottom: 5px;
     }
 
     .about-text {
@@ -85,47 +85,61 @@
 @media(min-width:992px) and (max-width: 1349px) {
 
 /*PRIMEIRA SEÇÃO*/
+
+    .homescreen {
+        gap: 20px;
+    }
+
     .photo-homescreen img {
-        width: 250px;
-        height: 250px;
+        display: none;
+    }
+
+    .photo-homescreen-right img {
+        display: flex;
+        width: 230px;
     }
 
     .static-title {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .dynamic-title p {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .homescreen .text-container {
-        font-size: 18px;
-        max-width: 500px;
+        font-size: 16px;
+        max-width: 400px;
     }
     
     .homescreen-navbar ul {
         font-size: 15px;
+        gap: 30px;
     }
 
 /*SEGUNDA SEÇÃO = TELA DE SOBRE*/
     .aboutscreen-photo img {
-        width: 250px;
+        width: 200px;
+    }
+
+    .about-container-text  {
+        height: 250px;
     }
 
     .about-text {
-        max-width: 400px;
+        max-width: 350px;
         font-size: 16px;
     }
 
     .about-container-text p span {
-        font-size: 35px;
+        font-size: 30px;
         padding-bottom: 5px;
     }
 
 
 /*TERCEIRA SEÇÃO = TELA DE CONHECIMENTOS*/
     .knowledge {
-        gap: 80px;
+        gap: 100px;
     }
 
     .knowledge h1 {
@@ -141,7 +155,7 @@
     }
 
     .first-container-knowledge i {
-        font-size: 60px;
+        font-size: 45px;
     }
 
     .second-container-knowledge {
@@ -149,7 +163,7 @@
     }
 
     .second-container-knowledge i {
-        font-size: 60px;
+        font-size: 45px;
     }
 
     .container-knowledge {
@@ -161,3 +175,392 @@
     }
 
 }
+
+@media(min-width:768px) and (max-width:991px) {
+
+    /*HEADER*/
+    .header {
+        visibility: hidden;
+    }
+
+    /*PRIMEIRA SEÇÃO*/
+
+    .homescreen {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo-homescreen-logo img {
+        display: flex;
+        width: 120px;
+    }
+
+    .photo-homescreen img {
+        display: none;
+        width: 150px;
+    }
+
+    .photo-homescreen-right img {
+        display: none;
+    }
+
+    .titles {
+        align-items: center;
+    }
+
+    .static-title {
+        font-size: 30px;
+    }
+
+    .dynamic-title p {
+        font-size: 30px;
+    }
+
+    .homescreen .text-container {
+        font-size: 16px;
+        max-width: 400px;
+        text-align: center;
+    }
+    
+    .homescreen-navbar ul {
+        font-size: 15px;
+        gap: 30px;
+    }
+
+     /*SEGUNDA SEÇÃO*/
+    .about {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .about-container-text {
+        align-items: center;
+    }
+
+    .aboutscreen-photo img {
+        width: 170px;
+        border-left: 3px solid #8f14c0;
+    }
+
+    .about-container-text p span {
+        font-size: 35px;
+        padding-bottom: 5px;
+    }
+
+    .about-container-text p span::after {
+        width: 100%;
+    }
+
+    .about-text {
+        font-size: 16px;
+        max-width: 400px;
+        text-align: center;
+    }
+    
+    .about-text.activeSparator ::after {
+        width: 100%;
+    }
+
+    .btn-read-more {
+        justify-content: center;
+    }
+
+    /*TERCEIRA SEÇÃO*/
+    .knowledge {
+        gap: 100px;
+    }
+
+    .knowledge h1 {
+        font-size: 35px;
+    }
+
+    .container-knowledge p {
+        font-size: 16px;
+    }
+
+    .container-knowledge {
+        gap: 10px;
+    }
+
+    .first-container-knowledge {
+        gap:50px;
+    }
+    .second-container-knowledge {
+        gap:50px;
+    }
+
+    .first-container-knowledge i {
+        font-size: 55px;
+    }
+
+    .second-container-knowledge i {
+        font-size: 55px;
+    }
+
+    .knowledge-container-all {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:481px) and (max-width:767px) {
+
+/*HEADER*/
+    .header {
+        visibility: hidden;
+    }
+
+ /*PRIMEIRA SEÇÃO*/
+
+    .homescreen {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .photo-homescreen-logo img {
+        display: flex;
+        width: 120px;
+    }
+
+    .photo-homescreen img {
+        display: none;
+        width: 150px;
+    }
+
+    .photo-homescreen-right img {
+        display: none;
+    }
+
+    .titles-container {
+        align-items: center;
+    }
+
+    .titles {
+        align-items: center;
+    }
+
+    .static-title {
+        font-size: 30px;
+    }
+
+    .dynamic-title p {
+        font-size: 30px;
+    }
+
+    .homescreen .text-container {
+        font-size: 16px;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .homescreen-navbar ul {
+        display: none;
+    }
+
+     /*SEGUNDA SEÇÃO*/
+    .about {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .about-container-text {
+        align-items: center;
+    }
+
+    .aboutscreen-photo img {
+        width: 150px;
+        border-left: 3px solid #8f14c0;
+    }
+
+    .about-container-text p span {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    .about-container-text p span::after {
+        width: 100%;
+    }
+
+    .about-text {
+        font-size: 16px;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .about-text.activeSparator ::after {
+        width: 100%;
+    }
+
+    .btn-read-more {
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    /*TERCEIRA SEÇÃO*/
+    .knowledge {
+        gap: 80px;
+    }
+
+    .knowledge h1 {
+        font-size: 32px;
+    }
+
+    .container-knowledge p {
+        font-size: 15px;
+    }
+
+    .container-knowledge {
+        gap: 10px;
+    }
+
+    .first-container-knowledge {
+        gap:50px;
+    }
+    .second-container-knowledge {
+        gap:50px;
+    }
+
+    .first-container-knowledge i {
+        font-size: 52px;
+    }
+
+    .second-container-knowledge i {
+        font-size: 52px;
+    }
+
+    .knowledge-container-all {
+        display: flex;
+        flex-direction: column;
+    }   
+}
+
+@media(max-width:480px) {
+
+    /*HEADER*/
+    .header {
+        visibility: hidden;
+    }
+
+ /*PRIMEIRA SEÇÃO*/
+
+    .homescreen {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .photo-homescreen-logo img {
+        display: flex;
+        width: 120px;
+    }
+
+    .photo-homescreen img {
+        display: none;
+        width: 150px;
+    }
+
+    .photo-homescreen-right img {
+        display: none;
+    }
+
+    .titles-container {
+        align-items: center;
+    }
+
+    .titles {
+        align-items: center;
+    }
+
+    .static-title {
+        font-size: 30px;
+    }
+
+    .dynamic-title p {
+        font-size: 30px;
+    }
+
+    .homescreen .text-container {
+        font-size: 16px;
+        max-width: 270px;
+        text-align: center;
+    }
+    
+    .homescreen-navbar ul {
+        display: none;
+    }
+
+     /*SEGUNDA SEÇÃO*/
+    .about {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .about-container-text {
+        align-items: center;
+    }
+
+    .aboutscreen-photo img {
+        width: 150px;
+        border-left: 3px solid #8f14c0;
+    }
+
+    .about-container-text p span {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    .about-container-text p span::after {
+        width: 100%;
+    }
+
+    .about-text {
+        font-size: 15px;
+        max-width: 200px;
+        text-align: center;
+    }
+    
+    .about-text.activeSparator ::after {
+        width: 100%;
+    }
+
+    .btn-read-more {
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    /*TERCEIRA SEÇÃO*/
+    .knowledge {
+        gap: 80px;
+    }
+
+    .knowledge h1 {
+        font-size: 28px;
+    }
+
+    .container-knowledge p {
+        font-size: 12px;
+    }
+
+    .container-knowledge {
+        gap: 10px;
+    }
+
+    .first-container-knowledge {
+        gap:50px;
+    }
+    .second-container-knowledge {
+        gap:50px;
+    }
+
+    .first-container-knowledge i {
+        font-size: 45px;
+    }
+
+    .second-container-knowledge i {
+        font-size: 45px;
+    }
+
+    .knowledge-container-all {
+        display: flex;
+        flex-direction: column;
+    }   
+}   
