@@ -1,43 +1,34 @@
 /*SEGUNDA SEÇÃO, TELA DE SOBRE*/
 
 .about {
-    background-color: #ebebeb;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
     padding: 50px 0px;
-}
-
-/*DIV DA FOTO DA TELA DE SOBRE*/
-.aboutscreen-photo {
-    position: relative;
-}
-
-/*FOTO DA TELA DE SOBRE*/
-.aboutscreen-photo img {
-    width: 300px;
-    border-radius: 50%;
-    border-left: 5px solid #8f14c0;
-    box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*LADO DO TEXTO DA TELA SOBRE*/
 .about-container {
+    background-color: #ebebeb;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: solid 2px #8f14c0;
 }
 
 /*DIV QUE AGRUPA TITULO, TEXTO, BOTÃO DE LER MAIS E MENOS...*/
 .about-container-text {
-    height: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: rgb(0, 0, 0);
     font-size: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 /*TEXTO SOBRE MIM COM UMA CLASSE PARA FAZER EFEITO DE DEGRADẼ*/
@@ -60,7 +51,7 @@
 .about-container-text p span::after {
     content: "";
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 3px;
     bottom: 5px;
     left: 0;
@@ -69,11 +60,11 @@
 
 /*TEXTO SOBRE MIM*/
 .about-text {
-    overflow: hidden;
-    max-width: 600px;
+    max-width: 500px;
     font-size: 18px;
     position: relative;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 /*CLASSE CRIADA PARA COLOCAR NAS PALAVRAS EM DESTAQUE, ASSIM ADICIONANDO UM FUNDO DIFERENCIADO*/
@@ -86,6 +77,8 @@
 
 /*DEGRADÊ DO TEXTO SOBRE*/
 .about-text::before {
+    display: none;
+    align-items: center;
     content: "";
     position: absolute;
     bottom: 0;
@@ -95,18 +88,19 @@
 }
 
 /*TRAÇADO INFERIOIR TEXTO SOBRE*/
-.about-text.activeSparator ::after {
+.about-text::after {
     content: "";
     position: absolute;
     bottom: 0px;
     left: 0;
     height: 3px;
-    width: 70%;
+    width: 100%;
     background-color: rgb(143, 20, 192);
+    display: none;
 }
 
 .btn-read-more {
-    display: flex;
+    display: none;
     cursor: pointer;
     border: none;
     font-size: 20px;

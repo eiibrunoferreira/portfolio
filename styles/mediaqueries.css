@@ -20,17 +20,14 @@
 
     .homescreen .text-container {
         font-size: 18px;
-        max-width: 450px;
+        max-width: 600px;
     }
     
     .homescreen-navbar ul {
-        font-size: 15px;
+        font-size: 16px;
     }
 
 /*SEGUNDA SEÇÃO = TELA DE SOBRE*/
-    .aboutscreen-photo img {
-        width: 230px;
-    }
 
     .about-container-text p span {
         font-size: 35px;
@@ -86,17 +83,8 @@
 
 /*PRIMEIRA SEÇÃO*/
 
-    .homescreen {
-        gap: 20px;
-    }
-
     .photo-homescreen img {
-        display: none;
-    }
-
-    .photo-homescreen-right img {
-        display: flex;
-        width: 230px;
+        width: 280px;
     }
 
     .static-title {
@@ -118,13 +106,6 @@
     }
 
 /*SEGUNDA SEÇÃO = TELA DE SOBRE*/
-    .aboutscreen-photo img {
-        width: 200px;
-    }
-
-    .about-container-text  {
-        height: 250px;
-    }
 
     .about-text {
         max-width: 350px;
@@ -188,6 +169,7 @@
     .homescreen {
         flex-direction: column;
         gap: 20px;
+        padding-right: 0;
     }
 
     .photo-homescreen-logo img {
@@ -220,6 +202,7 @@
         font-size: 16px;
         max-width: 400px;
         text-align: center;
+        border-left: none;
     }
     
     .homescreen-navbar ul {
@@ -235,11 +218,6 @@
 
     .about-container-text {
         align-items: center;
-    }
-
-    .aboutscreen-photo img {
-        width: 170px;
-        border-left: 3px solid #8f14c0;
     }
 
     .about-container-text p span {
@@ -315,6 +293,7 @@
     .homescreen {
         flex-direction: column;
         gap: 10px;
+        padding-right: 0;
     }
 
     .photo-homescreen-logo img {
@@ -351,6 +330,7 @@
         font-size: 16px;
         max-width: 300px;
         text-align: center;
+        border-left: none;
     }
     
     .homescreen-navbar ul {
@@ -365,11 +345,6 @@
 
     .about-container-text {
         align-items: center;
-    }
-
-    .aboutscreen-photo img {
-        width: 150px;
-        border-left: 3px solid #8f14c0;
     }
 
     .about-container-text p span {
@@ -446,6 +421,7 @@
     .homescreen {
         flex-direction: column;
         gap: 10px;
+        padding-right: 0;
     }
 
     .photo-homescreen-logo img {
@@ -482,6 +458,7 @@
         font-size: 16px;
         max-width: 270px;
         text-align: center;
+        border-left: none;
     }
     
     .homescreen-navbar ul {
@@ -496,11 +473,6 @@
 
     .about-container-text {
         align-items: center;
-    }
-
-    .aboutscreen-photo img {
-        width: 150px;
-        border-left: 3px solid #8f14c0;
     }
 
     .about-container-text p span {
