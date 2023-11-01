@@ -2,5 +2,9 @@
 
 
 .projects {
-    background-color: #ebebeb;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 100%;
 }

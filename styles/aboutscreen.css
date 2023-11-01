@@ -9,7 +9,6 @@
 
 /*LADO DO TEXTO DA TELA SOBRE*/
 .about-container {
-    background-color: #ebebeb;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,7 +16,6 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: solid 2px #8f14c0;
 }
 
 /*DIV QUE AGRUPA TITULO, TEXTO, BOTÃO DE LER MAIS E MENOS...*/
@@ -43,27 +41,37 @@
 
 /*TITULO SOBRE*/
 .about-container-text p span {
+    color: #000000;
     position: relative;
     font-size: 40px;
 }
 
-/*TRAÇADO ABAIXO DO TÍTULO*/
 .about-container-text p span::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 5px;
     left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 70%;
+    background-color: #8f14c0;
+}
+
+.about-container-text p span::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 20%;
     background-color: #8f14c0;
 }
 
 /*TEXTO SOBRE MIM*/
 .about-text {
-    max-width: 500px;
+    padding-top: 15px;
+    max-width: 350px;
     font-size: 18px;
     position: relative;
-    padding-bottom: 15px;
     text-align: center;
 }
 

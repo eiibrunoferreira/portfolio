@@ -1,8 +1,12 @@
 @import "./index.css"; /*Ìndice do site*/
 @import "/fonts/fonts.css"; /*Fontes*/
+@import "./header.css"; /*Cabeçalho*/
+@import "./profile.css"; /*Perfil*/
 @import "./navbar.css"; /*Barra de navegação*/
 @import "./buttonbacktotop.css"; /*Botão de voltar ao topo*/
 @import "./homescreen.css"; /*Tela de inicio*/
+@import "./main.css"; /*Tela onde fica os conteúdos*/
+@import "./about-knowledgescreenscreen.css"; /*Coluna que agrupa sobre e conhecimentos*/
 @import "./aboutscreen.css"; /*Tela de sobre*/
 @import "./knowledgescreen.css"; /*Tela de conhecimentos*/
 @import "./projectsscreen.css"; /*Tela de projetos*/

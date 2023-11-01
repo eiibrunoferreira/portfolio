@@ -2,19 +2,18 @@
 
 
 .knowledge {
-    background-color: #ebebeb;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 120px;
+    gap: 70px;
     padding: 50px 0px;
 }
 
 .knowledge h1 {
     position: relative;
-    font-size: 45px;
+    font-size: 35px;
     background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
     background-size: 400% 100%;
     animation: degrade 10s linear infinite alternate;
@@ -50,6 +49,7 @@
     display: flex;
     gap: 70px;
     align-items: center;
+    flex-direction: column;
 }
 
 /*DIV QUE AGRUPA APENAS OS CONHECIMENTOS POR LINHA*/

@@ -1,4 +1,4 @@
-var menuNavTopo = document.querySelector(".header")
+var menuNavrodapé = document.querySelector(".menunav")
 var menuNavHome = document.querySelector(".homescreen-navbar")
 window.addEventListener("scroll", menunavtopo)
 function menunavtopo() {
