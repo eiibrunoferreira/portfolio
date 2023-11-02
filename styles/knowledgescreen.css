@@ -8,7 +8,9 @@
     align-items: center;
     justify-content: center;
     gap: 70px;
-    padding: 50px 0px;
+    background-color: rgb(218, 218, 218);
+    padding: 100px 15px;
+    border-radius: 20px;
 }
 
 .knowledge h1 {
@@ -47,7 +49,7 @@
 /*DIV QUE AGRUPA TODOS OS CONHECIMENTOS E SEPARADORES*/
 .knowledge-container-all {
     display: flex;
-    gap: 70px;
+    gap: 50px;
     align-items: center;
     flex-direction: column;
 }
@@ -56,13 +58,13 @@
 .first-container-knowledge {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 45px;
 }
 
 .second-container-knowledge {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 45px;
 }
 
 /*DIV QUE AGRUPA ICONE, NOME E TRAÇADO ABAIXO CADA CONHECIMENTO*/
