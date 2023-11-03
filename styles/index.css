@@ -42,10 +42,3 @@ a {
 }
 
 /*ATRIBUTOS ADICIONADO Á TODOS QUE CONTÉM A SECTION*/
-section {
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    top: 0;
-    left: 0;
-}

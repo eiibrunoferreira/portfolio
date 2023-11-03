@@ -3,12 +3,10 @@
 
 .homescreen {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
-    min-height: 50vh;
     padding-bottom: 65px;
-    top: 0;
-    left: 0;
+    padding-top: 200px;
 }
 
 /*LADO DOS DOS TÍTULOS E PÁGINAS*/
