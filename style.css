@@ -1,0 +1,16 @@
+@import "styles/index.css"; /*Ìndice do site*/
+@import "fonts/fonts.css"; /*Fontes*/
+@import "styles/header.css"; /*Cabeçalho*/
+@import "styles/profile.css"; /*Perfil*/
+@import "styles/navbar.css"; /*Barra de navegação*/
+@import "styles/buttonbacktotop.css"; /*Botão de voltar ao topo*/
+@import "styles/homescreen.css"; /*Tela de inicio*/
+@import "styles/main.css"; /*Tela onde fica os conteúdos*/
+@import "styles/about-knowledgescreenscreen-contact.css"; /*Coluna que agrupa sobre e conhecimentos*/
+@import "styles/aboutscreen.css"; /*Tela de sobre*/
+@import "styles/knowledgescreen.css"; /*Tela de conhecimentos*/
+@import "styles/projectsscreen.css"; /*Tela de projetos*/
+@import "styles/contactscreen.css"; /*Tela de contato*/
+@import "styles/separator.css"; /*Separadores*/
+@import "styles/keyframes.css"; /*Animações*/
+@import "styles/mediaqueries.css"; /*Responsividade do site*/
