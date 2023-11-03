@@ -28,6 +28,7 @@
 .social-media {
     display: flex;
     gap: 10px;
+    padding: 0px 20px;
 }
 
 .social-media i {

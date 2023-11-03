@@ -22,4 +22,41 @@
 
 @media(max-width:480px) {
 
-}   
+}
+
+
+@media(max-height: 925px) {
+    .profile {
+        top: 180px;
+    }
+
+    .profile img {
+        width: 350px;
+    }
+}
+
+@media(max-height: 890px) {
+    .profile img {
+        width: 300px;
+    }
+}
+
+@media(max-height: 850px) {
+    .profile {
+        top: 220px;
+    }
+
+    .profile img {
+        width: 250px;
+    }
+}
+
+@media(max-height: 820px) {
+    .profile {
+        top: 250px;
+    }
+
+    .profile img {
+        width: 200px;
+    }
+}

@@ -8,7 +8,7 @@ header {
     position: absolute;
     display: flex;
     width: 1250px;
-    height: 40vh;
+    height: 350px;
     left: 50%;
     transform: translate(-50%);
     border-bottom-left-radius: 20px;

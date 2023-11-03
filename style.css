@@ -1,5 +1,5 @@
-@import "styles/index.css"; /*Ìndice do site*/
 @import "fonts/fonts.css"; /*Fontes*/
+@import "styles/index.css"; /*Ìndice do site*/
 @import "styles/header.css"; /*Cabeçalho*/
 @import "styles/profile.css"; /*Perfil*/
 @import "styles/navbar.css"; /*Barra de navegação*/
