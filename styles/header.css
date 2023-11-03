@@ -11,9 +11,9 @@ header {
     height: 40vh;
     left: 50%;
     transform: translate(-50%);
-    background: #000000 url(/assets/cabeçalho.jpg) no-repeat center top;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    background: #000000 url(../assets/cabeçalho.jpg) no-repeat center top;
 }
 
 .overlay {
