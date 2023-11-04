@@ -15,7 +15,7 @@
 
 .knowledge h1 {
     position: relative;
-    font-size: 35px;
+    font-size: 30px;
     background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
     background-size: 400% 100%;
     animation: degrade 10s linear infinite alternate;

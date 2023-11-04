@@ -1,16 +1,13 @@
 header {
-    position: relative;
     display: flex;
     width: 100vw;
-    height: 40vh;
+    height: 370px;
+    justify-content: center;
 }
 .header {
-    position: absolute;
     display: flex;
     width: 1250px;
-    height: 350px;
-    left: 50%;
-    transform: translate(-50%);
+    height: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background: #000000 url(../assets/cabeçalho.jpg) no-repeat center top;
