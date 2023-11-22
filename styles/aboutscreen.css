@@ -4,52 +4,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(218, 218, 218);
-    padding: 45px 35px;
-    border-radius: 20px;
+    position: relative;
+    padding: 30px 30px;
 }
 
 /*LADO DO TEXTO DA TELA SOBRE*/
 .about-container {
-    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.icon-user-about {
-    display: flex;
-    position: absolute;
-    top: -85px;
-    font-size: 45px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(218, 218, 218);
-    border-radius: 50%;
-    padding: 20px 25px;
+.photo-about {
+    width: 500px;
 }
 
 /*DIV QUE AGRUPA TITULO, TEXTO, BOTÃO DE LER MAIS E MENOS...*/
 .about-container-text {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     color: rgb(0, 0, 0);
     align-items: center;
     justify-content: center;
 }
 
-/*TEXTO SOBRE MIM COM UMA CLASSE PARA FAZER EFEITO DE DEGRADẼ*/
-.about-container-text.active {
-    height: auto;
-}
-
-/*ATRIBUTO ADICIONADO AO TEXTO PARA ELE SUMIR CONFORME O DEGRADẼ*/
-.about-container-text.active ::before {
-    visibility: hidden;
-}
-
 /*TITULO SOBRE*/
+
 .about-container-text p span {
     color: #000000;
     position: relative;
@@ -79,11 +60,10 @@
 
 /*TEXTO SOBRE MIM*/
 .about-text {
-    max-width: 350px;
+    max-width: 600px;
     font-size: 16px;
-    text-align: start;
+    text-align: center;
     position: relative;
-    padding-left: 10px;
 }
 
 /*CLASSE CRIADA PARA COLOCAR NAS PALAVRAS EM DESTAQUE, ASSIM ADICIONANDO UM FUNDO DIFERENCIADO*/
@@ -92,45 +72,4 @@
     color: #ebebeb;
     padding-inline: 5px;
     border-radius: 5px;
-}
-
-/*DEGRADÊ DO TEXTO SOBRE*/
-.about-text::before {
-    display: none;
-    align-items: center;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(transparent, #ebebeb);
-}
-
-/*TRAÇADO LATERAL TEXTO SOBRE*/
-.about-text::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 100%;
-    width: 2px;
-    background-color: rgb(143, 20, 192);
-}
-
-.btn-read-more {
-    display: none;
-    cursor: pointer;
-    border: none;
-    font-size: 20px;
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-}
-
-.btn-read-more:hover {
-    transition-duration: 0.5s;
-    color: #8f14c0;
-}
-
-.btn-read-more:active {
-    color: rgb(0, 0, 0);
 }

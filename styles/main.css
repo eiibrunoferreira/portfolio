@@ -1,6 +1,9 @@
 .main {
     display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: center;
-    gap: 100px;
-    padding: 100px 150px;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 50px;
 }

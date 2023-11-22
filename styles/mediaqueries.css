@@ -6,72 +6,61 @@
 @media(max-width: 1900px) {
 /*BANNER*/
 .header {
-    width: 1150px;
+    
 }
 
 /*PERFIL*/
 .profile img {
-    width: 320px;
+    
 }
 .profile {
-    top: 200px;
+    
 }
 
 /*TELA DE INICIO*/
 .homescreen {
-    padding-top: 170px;
+    
 }
 .static-title {
-    font-size: 24px;
+    
 }
 .dynamic-title p {
-    font-size: 44px;
+    
 }
 
 /*SOBRE*/
 .icon-user-about {
-    top: -75px;
-    font-size: 35px;
+   
 }
 .about-container-text p span {
-    font-size: 26px;
+    
 }
 .about-text {
-    max-width: 280px;
-    font-size: 14px;
+    
 }
 
 /*CONHECIMENTOS*/
 .knowledge h1 {
-    font-size: 26px;
 }
 .first-container-knowledge {
-    gap: 35px;
 }
 .second-container-knowledge {
-    gap: 35px;
 }
 .first-container-knowledge i {
-    font-size: 40px;
 }
 .second-container-knowledge i {
-    font-size: 40px;
 }
 .container-knowledge p {
-    font-size: 18px;
 }
 
 /*CONTATO*/
 .contact h1 {
-    font-size: 18px;
 }
 .contact a {
-    font-size: 14px;
 }
 
 /*PROJETOS*/
 .header-projectsscreen h1 {
-    font-size: 26px;
 }
 }
 

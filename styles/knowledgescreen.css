@@ -8,9 +8,22 @@
     align-items: center;
     justify-content: center;
     gap: 70px;
-    background-color: rgb(218, 218, 218);
-    padding: 100px 15px;
-    border-radius: 20px;
+    background-color: rgb(31, 31, 31);
+    padding: 70px 70px;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+}
+
+
+.knowledge::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: -90px;
+    left: 0px;
+    background: linear-gradient(to left, #340347 , #8f14c0);
 }
 
 .knowledge h1 {
@@ -32,7 +45,7 @@
     height: 3px;
     top: 0;
     right: 0;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 /*TRAÇADO INFERIOR DO TÍTULO CONHECIMENTO*/
@@ -43,27 +56,15 @@
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
-/*DIV QUE AGRUPA TODOS OS CONHECIMENTOS E SEPARADORES*/
-.knowledge-container-all {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    flex-direction: column;
-}
-
-/*DIV QUE AGRUPA APENAS OS CONHECIMENTOS POR LINHA*/
-.first-container-knowledge {
+/*DIV QUE AGRUPA TODOS OS CONHEIMENTOS*/
+.container-knowledge-all {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
-    gap: 45px;
-}
-
-.second-container-knowledge {
-    display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 45px;
 }
 
@@ -73,18 +74,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
     transition-duration: 0.5s;
     cursor: pointer;
 }
 
-/*ICONES DOS CONHECIMENTOS*/
-.first-container-knowledge i {
+.container-knowledge i {
     font-size: 50px;
-}
-
-.second-container-knowledge i {
-    font-size: 50px;
+    color: white;
 }
 
 /*NOME DE CADA CONHECIMENTO*/
@@ -92,6 +89,7 @@
     font-size: 22px;
     cursor: pointer;
     margin-bottom: 15px;
+    color: white;
 }
 
 /*TRAÇADO DE CADA CONHECIMENTO JÁ COM EFEITO DE DEGRADẼ*/

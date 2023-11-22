@@ -1,6 +1,16 @@
 /*Animaçẽs do site*/
 
 
+/*ANIMAÇÃO LETREIRO DE ENTRADA SITE*/
+@keyframes animated-text {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /*ANIMAÇÃO EFEITO TITULO PÁGINA HOME*/
 @keyframes escrevendo {
     50% {

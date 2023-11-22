@@ -3,10 +3,10 @@
 @import "styles/header.css"; /*Cabeçalho*/
 @import "styles/profile.css"; /*Perfil*/
 @import "styles/navbar.css"; /*Barra de navegação*/
+@import "styles/animated-text-homescreen.css"; /*Letreiro Animado*/
 @import "styles/buttonbacktotop.css"; /*Botão de voltar ao topo*/
 @import "styles/homescreen.css"; /*Tela de inicio*/
 @import "styles/main.css"; /*Tela onde fica os conteúdos*/
-@import "styles/about-knowledgescreenscreen-contact.css"; /*Coluna que agrupa sobre e conhecimentos*/
 @import "styles/aboutscreen.css"; /*Tela de sobre*/
 @import "styles/knowledgescreen.css"; /*Tela de conhecimentos*/
 @import "styles/projectsscreen.css"; /*Tela de projetos*/
