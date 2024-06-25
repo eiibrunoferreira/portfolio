@@ -10,7 +10,7 @@
 html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: rgb(194,194,194) #ffffff;
+    scrollbar-color: #02375A #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +22,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(194, 194, 194);
+    background-color: #02375A;
 }
 
 body{

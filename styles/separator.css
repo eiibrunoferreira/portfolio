@@ -7,7 +7,8 @@
     width: 100vw;
     padding-left: 170px;
     padding-right: 170px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .separator-left {
@@ -40,6 +41,6 @@
 }
 
 .social-media i:hover {
-    color: black;
+    color: #02375A;
     transform: scale(1.10, 1.10);
 }

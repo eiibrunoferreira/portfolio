@@ -2,34 +2,24 @@
 
 
 .knowledge {
-    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 70px;
     background-color: rgb(31, 31, 31);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
     padding: 70px 70px;
     overflow: hidden;
     position: relative;
-    width: 100vw;
-}
-
-
-.knowledge::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom: -90px;
-    left: 0px;
-    background: linear-gradient(to left, #340347 , #8f14c0);
+    width: calc(100vw - 40px);
 }
 
 .knowledge h1 {
     position: relative;
     font-size: 30px;
-    background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
+    background: linear-gradient(45deg, #0ebeff, #2687ff, #3f50ff, #0ebeff);
     background-size: 400% 100%;
     animation: degrade 10s linear infinite alternate;
     background-clip: text;
@@ -97,7 +87,7 @@
     content: "";
     height: 3px;
     width: 100%;
-    background: linear-gradient(45deg, #8f14c0, #c014c0, #e25e11, #8f14c0);
+    background: linear-gradient(45deg, #0ebeff, #2687ff, #3f50ff, #0ebeff);
     position: absolute;
     bottom: 0;
     left: 0;

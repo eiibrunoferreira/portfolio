@@ -10,7 +10,8 @@
 @import "styles/aboutscreen.css"; /*Tela de sobre*/
 @import "styles/knowledgescreen.css"; /*Tela de conhecimentos*/
 @import "styles/projectsscreen.css"; /*Tela de projetos*/
-@import "styles/contactscreen.css"; /*Tela de contato*/
+@import "styles/footer.css"; /*Rodapé*/
+@import "styles/contactscreen.css"; /*Balão de contato*/
 @import "styles/separator.css"; /*Separadores*/
 @import "styles/keyframes.css"; /*Animações*/
 @import "styles/mediaqueries.css"; /*Responsividade do site*/

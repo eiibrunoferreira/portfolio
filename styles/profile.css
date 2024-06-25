@@ -1,7 +1,7 @@
 .profile {
     display: flex;
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -9,7 +9,7 @@
 .profile img {
     width: 230px;
     border-radius: 50%;
-    border: 5px solid #ffffff;
+    border: 5px solid #02375A;
     padding: 5px;
     transition-duration: 0.5s;
 }

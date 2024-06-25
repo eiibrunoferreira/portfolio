@@ -2,10 +2,12 @@
 
 .about {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 30px 30px;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*LADO DO TEXTO DA TELA SOBRE*/
@@ -13,10 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.photo-about {
-    width: 500px;
 }
 
 /*DIV QUE AGRUPA TITULO, TEXTO, BOTÃO DE LER MAIS E MENOS...*/
@@ -45,7 +43,7 @@
     bottom: 0;
     height: 2px;
     width: 70%;
-    background-color: #8f14c0;
+    background-color: #02375A;
 }
 
 .about-container-text p span::before {
@@ -55,7 +53,7 @@
     bottom: 0;
     height: 2px;
     width: 20%;
-    background-color: #8f14c0;
+    background-color: #02375A;
 }
 
 /*TEXTO SOBRE MIM*/
@@ -67,8 +65,8 @@
 }
 
 /*CLASSE CRIADA PARA COLOCAR NAS PALAVRAS EM DESTAQUE, ASSIM ADICIONANDO UM FUNDO DIFERENCIADO*/
-.color-purple-text {
-    background-color: rgb(108, 13, 146);
+.color-text {
+    background-color: #02375A;
     color: #ebebeb;
     padding-inline: 5px;
     border-radius: 5px;
