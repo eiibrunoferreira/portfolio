@@ -3,13 +3,13 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
     width: auto;
     border-radius: 50%;
     opacity: 0;
     transition: 0.5s;
     filter: blur(15px);
     transform: translatey(-100%);
+    margin-bottom: 15px;
 }
 
 /*EFEITO APARECER NA TELA*/
@@ -19,7 +19,7 @@
     transform: translatey(0);
 }
 
-.profileImg:hover + .ballon-profile {
+.profileImg:hover+.ballon-profile {
     opacity: 1;
 }
 

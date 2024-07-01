@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
     background-color: white;
+    height: 100vh;
 }
 
 /*LADO DOS DOS TÍTULOS E PÁGINAS*/
@@ -58,7 +58,7 @@
 }
 
 .dynamic-title p {
-    background: linear-gradient(to right, #02375A , #074168);
+    background: linear-gradient(to right, #02375A, #074168);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
