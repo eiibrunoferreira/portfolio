@@ -1,6 +1,7 @@
 /*PRIMEIRA SEÇÃO, TELA DE INICIO*/
 .homescreen {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
@@ -29,6 +30,15 @@
     position: relative;
     color: black;
     font-size: 20px;
+    transition: 1s;
+    opacity: 0;
+    transform: translatex(-100%);
+}
+
+/*EFEITO APARECER NA TELA*/
+.staticTitleEffect {
+    opacity: 1;
+    transform: translatex(0);
 }
 
 .dynamic-title {
@@ -36,6 +46,15 @@
     display: flex;
     overflow: hidden;
     padding-right: 20px;
+    transition: 1s;
+    opacity: 0;
+    transform: translatex(100%);
+}
+
+/*EFEITO APARECER NA TELA*/
+.dynamicTitleEffect {
+    opacity: 1;
+    transform: translatex(0);
 }
 
 .dynamic-title p {

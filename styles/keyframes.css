@@ -18,20 +18,6 @@
     }
 }
 
-/*ANIMAÇÃO DE FLUTUAR NA FOTO NA PÁGINA HOME*/
-@keyframes flutuar {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-30px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-
 /*ANIMAÇÃO PARA SER COLOCADA NO BOTÃO VOLTAR AO TOPO E NO MENU DE NAVEGAÇÃO TOPO*/
 @keyframes aparecer {
     0% {
@@ -50,5 +36,39 @@
 
     100% {
         background-position: 400%;
+    }
+}
+
+/*ANIMAÇÃO PROFILE HOME*/
+
+
+@keyframes aparecerProfile {
+    from {
+        opacity: 0;
+        filter: blur(15px);
+        transform: translatey(-100%);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translatey(0);
+    }
+}
+
+@keyframes aparecerportfolio {
+    from {
+        transform: translatex(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparecernome {
+    from {
+        transform: translatex(100%);
+    }
+    to {
+        transform: translateX(0);
     }
 }

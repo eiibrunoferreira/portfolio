@@ -7,6 +7,9 @@
     align-items: center;
     border-radius: 20px;
     margin-top: 20px;
+    opacity: 0;
+    transition: 1s;
+    filter: blur(15px);
 }
 
 .animated-text-homescreen {
@@ -23,7 +26,12 @@
     padding: 0 20px;
     animation: animated-text 10s linear infinite;
     font-weight: 500;
-    word-spacing: 20px;
+    word-spacing: 5px;
     color: white;
     letter-spacing: 6px;
+}
+
+.containerAnimatedText {
+    opacity: 1;
+    filter: blur(0);
 }

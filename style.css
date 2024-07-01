@@ -8,6 +8,7 @@
 @import "styles/homescreen.css"; /*Tela de inicio*/
 @import "styles/main.css"; /*Tela onde fica os conteúdos*/
 @import "styles/aboutscreen.css"; /*Tela de sobre*/
+@import "styles/partition.css"; /*Partição de conhecimentos e meus projetos*/
 @import "styles/knowledgescreen.css"; /*Tela de conhecimentos*/
 @import "styles/projectsscreen.css"; /*Tela de projetos*/
 @import "styles/footer.css"; /*Rodapé*/

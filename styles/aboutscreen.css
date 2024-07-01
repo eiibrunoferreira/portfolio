@@ -5,7 +5,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
 }
@@ -28,6 +30,12 @@
 }
 
 /*TITULO SOBRE*/
+
+.title-about {
+    opacity: 0;
+    transition: 1s;
+    transform: translatey(-100%);
+}
 
 .about-container-text p span {
     color: #000000;
@@ -56,12 +64,25 @@
     background-color: #02375A;
 }
 
+.titleAboutEfecct {
+    opacity: 1;
+    transform: translatey(0);
+}
+
 /*TEXTO SOBRE MIM*/
 .about-text {
     max-width: 600px;
     font-size: 16px;
     text-align: center;
     position: relative;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translatey(100%);
+}
+
+.aboutTextEfecct {
+    opacity: 1;
+    transform: translatey(0);
 }
 
 /*CLASSE CRIADA PARA COLOCAR NAS PALAVRAS EM DESTAQUE, ASSIM ADICIONANDO UM FUNDO DIFERENCIADO*/

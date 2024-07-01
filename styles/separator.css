@@ -16,7 +16,7 @@
     content: "";
     height: 2px;
     width: 35vw;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(180, 180, 180);
 }
 
 .separator-right {
@@ -24,7 +24,7 @@
     content: "";
     height: 2px;
     width: 35vw;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(180, 180, 180);
 }
 
 .social-media {
@@ -34,7 +34,7 @@
 }
 
 .social-media i {
-    color: rgb(177, 177, 177);
+    color: rgb(170, 170, 170);
     cursor: pointer;
     font-size: 25px;
     transition-duration: 0.3s;

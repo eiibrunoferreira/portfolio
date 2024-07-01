@@ -7,16 +7,12 @@
     align-items: center;
     justify-content: center;
     gap: 70px;
-    background-color: rgb(31, 31, 31);
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
     padding: 70px 70px;
     overflow: hidden;
     position: relative;
-    width: calc(100vw - 40px);
 }
 
-.knowledge h1 {
+.title-knowledge {
     position: relative;
     font-size: 30px;
     background: linear-gradient(45deg, #0ebeff, #2687ff, #3f50ff, #0ebeff);
@@ -25,10 +21,18 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translatey(-200%);
+    transition: 1s;
+}
+
+.titleKnowledgeEfecct {
+    opacity: 1;
+    transform: translatey(0);
 }
 
 /*TRAÇADO SUPERIOR DO TÍTULO*/
-.knowledge h1::before {
+.title-knowledge::before {
     content: "";
     position: absolute;
     width: 50%;
@@ -39,7 +43,7 @@
 }
 
 /*TRAÇADO INFERIOR DO TÍTULO CONHECIMENTO*/
-.knowledge h1::after {
+.title-knowledge::after {
     content: "";
     position: absolute;
     width: 50%;
@@ -67,6 +71,16 @@
     gap: 5px;
     transition-duration: 0.5s;
     cursor: pointer;
+    opacity: 0;
+    transform: translatey(100%);
+    filter: blur(15px);
+}
+
+/*EFEITO SCROLL NAS LINGUAGENS*/
+.KnowledgeEfecct {
+    opacity: 1;
+    transform: translatey(0);
+    filter: blur(0);
 }
 
 .container-knowledge i {
