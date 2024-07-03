@@ -4,20 +4,11 @@
     align-items: center;
     justify-content: center;
     width: auto;
-    border-radius: 50%;
-    opacity: 0;
-    transition: 0.5s;
-    filter: blur(15px);
-    transform: translatey(-100%);
     margin-bottom: 15px;
+    border-radius: 50%;
+    animation: aparecerProfile;
 }
 
-/*EFEITO APARECER NA TELA*/
-.profileeffect {
-    opacity: 1;
-    filter: blur(0);
-    transform: translatey(0);
-}
 
 .profileImg:hover+.ballon-profile {
     opacity: 1;

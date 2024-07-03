@@ -32,6 +32,8 @@
 /*TITULO SOBRE*/
 
 .title-about {
+    display: flex;
+    position: relative;
     opacity: 0;
     transition: 1s;
     transform: translatey(-100%);

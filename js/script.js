@@ -35,19 +35,6 @@ btnVoltarTopo.addEventListener("click", function () {
 
 //EFEITOS DE SCROLL NA PÁGINA
 
-//EFEITO PROFILE
-const profileeffect = document.querySelector(".profile")
-const observerScrollProfile = new IntersectionObserver((entries) => {
-    entries.forEach((profileeffect) => {
-        if (profileeffect.isIntersecting) {
-            profileeffect.target.classList.add("profileeffect")
-        } else {
-            profileeffect.target.classList.remove("profileeffect")
-        }
-    })
-})
-observerScrollProfile.observe(profileeffect);
-
 //EFEITO PALAVRA "PORTIFOLIO"
 const staticTitleEffect = document.querySelector(".static-title")
 const observerScrollStaticTitle = new IntersectionObserver((entries) => {
