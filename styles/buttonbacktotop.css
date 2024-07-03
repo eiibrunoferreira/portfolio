@@ -1,0 +1,23 @@
+/*Botão de voltar ao topo*/
+
+
+.btn-back-to-top {
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    bottom: 15px;
+    right: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    animation: aparecer ease 1s;
+}
+
+.btn-back-to-top i {
+    font-size: 20px;
+    color: #02375A;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30%;
+}

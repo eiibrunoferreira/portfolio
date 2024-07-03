@@ -1,0 +1,9 @@
+.partition {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    width: calc(100vw - 130px);
+    z-index: 1;
+}

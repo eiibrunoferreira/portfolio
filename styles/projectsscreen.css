@@ -1,0 +1,44 @@
+/*QUARTA SEÇÃO, TELA DE PROJETOS*/
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.header-projectsscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 900px;
+    height: 90px;
+    position: relative;
+}
+
+.header-projectsscreen h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.header-projectsscreen::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #3f50ff , #2687ff);
+    width: 300px;
+    height: 3px;
+    left: 0px;
+}
+
+.header-projectsscreen::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to left, #3f50ff , #2687ff);
+    width: 300px;
+    height: 3px;
+    right: 0px;
+}

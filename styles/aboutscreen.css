@@ -1,0 +1,96 @@
+/*SEGUNDA SEÇÃO, TELA DE SOBRE*/
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*LADO DO TEXTO DA TELA SOBRE*/
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*DIV QUE AGRUPA TITULO, TEXTO, BOTÃO DE LER MAIS E MENOS...*/
+.about-container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+/*TITULO SOBRE*/
+
+.title-about {
+    display: flex;
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+    transform: translatey(-100%);
+}
+
+.about-container-text p span {
+    color: #000000;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-container-text p span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 70%;
+    background-color: #02375A;
+}
+
+.about-container-text p span::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 20%;
+    background-color: #02375A;
+}
+
+.titleAboutEfecct {
+    opacity: 1;
+    transform: translatey(0);
+}
+
+/*TEXTO SOBRE MIM*/
+.about-text {
+    max-width: 600px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translatey(100%);
+}
+
+.aboutTextEfecct {
+    opacity: 1;
+    transform: translatey(0);
+}
+
+/*CLASSE CRIADA PARA COLOCAR NAS PALAVRAS EM DESTAQUE, ASSIM ADICIONANDO UM FUNDO DIFERENCIADO*/
+.color-text {
+    background-color: #02375A;
+    color: #ebebeb;
+    padding-inline: 5px;
+    border-radius: 5px;
+}

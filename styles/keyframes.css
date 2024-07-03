@@ -1,0 +1,74 @@
+/*Animaçẽs do site*/
+
+
+/*ANIMAÇÃO LETREIRO DE ENTRADA SITE*/
+@keyframes animated-text {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*ANIMAÇÃO EFEITO TITULO PÁGINA HOME*/
+@keyframes escrevendo {
+    50% {
+        left: 103%;
+    }
+}
+
+/*ANIMAÇÃO PARA SER COLOCADA NO BOTÃO VOLTAR AO TOPO E NO MENU DE NAVEGAÇÃO TOPO*/
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/*ANIMAÇÃO DO DEGRADẼ DE CORES DO TÍTULO CONHECIMENTOS E RISCO EM BAIXO DE CADA UM */
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+/*ANIMAÇÃO PROFILE HOME*/
+
+
+@keyframes aparecerProfile {
+    from {
+        opacity: 0;
+        filter: blur(15px);
+        transform: translatey(-100%);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translatey(0);
+    }
+}
+
+@keyframes aparecerportfolio {
+    from {
+        transform: translatex(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparecernome {
+    from {
+        transform: translatex(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

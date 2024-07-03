@@ -1,0 +1,73 @@
+/*QUINTA E ÚLTIMA SEÇÃO, RODAPÉ COM FORMAS DE CONTATO*/
+
+
+.contact {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 600px;
+    height: 100px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+.contactEfecct {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.icon-email-contact {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(31, 31, 31);
+}
+
+.contact h1 {
+    position: relative;
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.contact h1::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(to top, #3f50ff , #2687ff);
+}
+
+.botão-email {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    padding-left: 10px;
+}
+
+#icon-arrow {
+    color: white;
+}
+
+.contact a {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.contact a:hover {
+    transform: translate(7px);
+}

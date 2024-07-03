@@ -1,0 +1,115 @@
+/*TERCEIRA SEÇÃO, TELA DE CONHECIMENTOS*/
+
+
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 70px 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+.title-knowledge {
+    position: relative;
+    font-size: 30px;
+    background: linear-gradient(45deg, #0ebeff, #2687ff, #3f50ff, #0ebeff);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translatey(-200%);
+    transition: 1s;
+}
+
+.titleKnowledgeEfecct {
+    opacity: 1;
+    transform: translatey(0);
+}
+
+/*TRAÇADO SUPERIOR DO TÍTULO*/
+.title-knowledge::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+
+/*TRAÇADO INFERIOR DO TÍTULO CONHECIMENTO*/
+.title-knowledge::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+/*DIV QUE AGRUPA TODOS OS CONHEIMENTOS*/
+.container-knowledge-all {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+/*DIV QUE AGRUPA ICONE, NOME E TRAÇADO ABAIXO CADA CONHECIMENTO*/
+.container-knowledge {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translatey(100%);
+    filter: blur(15px);
+}
+
+/*EFEITO SCROLL NAS LINGUAGENS*/
+.KnowledgeEfecct {
+    opacity: 1;
+    transform: translatey(0);
+    filter: blur(0);
+}
+
+.container-knowledge i {
+    font-size: 50px;
+    color: white;
+}
+
+/*NOME DE CADA CONHECIMENTO*/
+.container-knowledge p {
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/*TRAÇADO DE CADA CONHECIMENTO JÁ COM EFEITO DE DEGRADẼ*/
+.container-knowledge ::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(45deg, #0ebeff, #2687ff, #3f50ff, #0ebeff);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+}
+
+/*EFEITO DE ZOOM AO PASSAR O MOUSE POR CADA CONHECIMENTO*/
+.container-knowledge:hover {
+    transform: scale(1.25, 1.25);
+}
